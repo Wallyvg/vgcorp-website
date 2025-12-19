@@ -2,35 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>VG Corp (Pty) Ltd | South African Technology Company</title>
+  <title>VG Corp (Pty) Ltd | Holding Company for Consumer Brands</title>
 
-  <!-- SEO -->
-  <meta name="description" content="VG Corp (Pty) Ltd is a South African technology company building practical digital products including PriceSmart, Zalvory and Aquavra.">
-  <meta name="keywords" content="VG Corp, PriceSmart, Zalvory, Aquavra, South Africa, technology company">
+  <!-- SEO META -->
+  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company that owns and manages independent consumer brands designed to simplify everyday life.">
+  <meta name="keywords" content="VG Corp, holding company, PriceSmart, Zalvory, Aquavra, South Africa">
   <meta name="author" content="VG Corp (Pty) Ltd">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Basic Styling -->
   <style>
-    body { font-family: Arial, Helvetica, sans-serif; margin: 0; color: #222; }
-    header { background: #0f172a; padding: 16px; color: white; }
-    header img { height: 48px; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: 500; }
-    main { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-    h1, h2 { color: #0f172a; }
-    .brands { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 20px; margin-top: 30px; }
-    .card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px; text-align: center; }
-    .card img { height: 80px; margin-bottom: 16px; }
-    .card a { display: inline-block; margin-top: 10px; color: #2563eb; text-decoration: none; font-weight: 600; }
-    footer { text-align: center; padding: 20px; margin-top: 40px; border-top: 1px solid #e5e7eb; color: #555; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      color: #222;
+      background-color: #ffffff;
+    }
+
+    header {
+      background: #0f172a;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 46px;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin-left: 14px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1, h2 {
+      color: #0f172a;
+    }
+
+    .brands {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+      background: #ffffff;
+    }
+
+    .card img {
+      height: 80px;
+      margin-bottom: 16px;
+      object-fit: contain;
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 14px;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      margin-top: 50px;
+      border-top: 1px solid #e5e7eb;
+      color: #555;
+      font-size: 14px;
+    }
   </style>
 </head>
 
 <body>
 
 <header>
+  <img src="/assets/logos/VG Corp Logo.png" alt="VG Corp Logo">
+
   <nav>
     <a href="/">Home</a>
+    <a href="#brands">Brands</a>
     <a href="/pricesmart/disclaimer.html">PriceSmart</a>
     <a href="https://zalvory.co.za" target="_blank">Zalvory</a>
     <a href="https://aquavra.com" target="_blank">Aquavra</a>
@@ -42,49 +124,53 @@
   <h1>VG Corp (Pty) Ltd</h1>
 
   <p>
-    VG Corp (Pty) Ltd (Reg No: 2025/519458/07) is a South African technology company
-    building practical, consumer-focused digital products that help people save
-    time and money.
+    VG Corp (Pty) Ltd (Reg No: 2025/519458/07) is a South African holding company that
+    owns and manages a portfolio of independent consumer brands and digital services.
+    Each brand operates independently while sharing a common goal of simplifying
+    everyday life for consumers.
   </p>
 
-  <h2>Our Mission</h2>
+  <h2>Our Purpose</h2>
   <p>
-    To build affordable, reliable digital solutions for South African users and
-    beyond.
+    To build, support, and manage practical brands that make daily decisions easier,
+    more affordable, and more accessible for people in South Africa and beyond.
   </p>
 
-  <h2 id="projects">Our Brands</h2>
+  <h2 id="brands">Our Brands</h2>
 
   <div class="brands">
 
+    <!-- PriceSmart -->
     <div class="card">
-      <img src="/assets/logos/pricesmart.png" alt="PriceSmart App">
+      <img src="/assets/logos/PriceSmart Logo.png" alt="PriceSmart App Logo">
       <h3>PriceSmart</h3>
       <p>
         A South African price comparison and specials aggregation app.
-        Subscription-based. No purchasing takes place in the app.
+        Subscription-based. No purchasing takes place within the app.
       </p>
-      <a href="/pricesmart/disclaimer.html">App Legal Info →</a>
+      <a href="/pricesmart/disclaimer.html">View App Legal Info →</a>
     </div>
 
+    <!-- Zalvory -->
     <div class="card">
-      <img src="/assets/logos/zalvory.png" alt="Zalvory">
+      <img src="/assets/logos/Gold Zalvory.jpg" alt="Zalvory Logo">
       <h3>Zalvory</h3>
       <p>
-        A consumer-facing eCommerce brand with its own independent online store
-        and legal documentation.
+        A consumer-facing eCommerce brand operating independently with its own
+        website, checkout process, and legal documentation.
       </p>
-      <a href="https://zalvory.co.za" target="_blank">Visit Store →</a>
+      <a href="https://zalvory.co.za" target="_blank">Visit Zalvory →</a>
     </div>
 
+    <!-- Aquavra -->
     <div class="card">
-      <img src="/assets/logos/aquavra.png" alt="Aquavra">
+      <img src="/assets/logos/Aquavra.png" alt="Aquavra Logo">
       <h3>Aquavra</h3>
       <p>
-        An international digital brand focused on global products and services,
-        operated independently under VG Corp.
+        An international brand focused on the development and management of global
+        digital products and services under the VG Corp portfolio.
       </p>
-      <a href="https://aquavra.com" target="_blank">Visit Website →</a>
+      <a href="https://aquavra.com" target="_blank">Visit Aquavra →</a>
     </div>
 
   </div>
