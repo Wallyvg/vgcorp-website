@@ -3,57 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <title>VG Corp | Simplifying Life Through Purpose-Driven Brands</title>
-  <meta name="description" content="VG Corp is a holding company uniting purpose-driven brands that simplify everyday life across commerce, travel, wellness, and digital services.">
+
+  <!-- SEO META -->
+  <meta name="description" content="VG Corp is a South African holding company uniting purpose-driven brands that simplify everyday life across commerce, travel, wellness, and digital services.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --primary: #22773d;
+      --secondary: #84af4b;
+      --highlight: #dc8725;
+      --alert: #e33a33;
+      --background: #ffffff;
+      --text: #1f2933;
+      --border: #e5e7eb;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: #ffffff;
+      padding: 32px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #e6f4ea;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .brands {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .brand-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      background: #ffffff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .brand-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .brand-card h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .brand-card p {
+      font-size: 14px;
+    }
+
+    .brand-card a {
+      display: inline-block;
+      margin-top: 14px;
+      font-weight: bold;
+      color: var(--highlight);
+      text-decoration: none;
+    }
+
+    .brand-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding: 24px;
+      text-align: center;
+      font-size: 14px;
+      color: #4b5563;
+      border-top: 1px solid var(--border);
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
   <h1>VG Corp</h1>
-  <p>Holding brands that simplify life through trusted services and experiences.</p>
+  <p>Holding purpose-driven brands that simplify everyday living.</p>
 </header>
 
-<hr>
+<main>
 
-<section>
-  <h2>Our Brands</h2>
+  <section>
+    <h2>Our Brands</h2>
 
-  <ul>
-    <li>
-      <strong>Zalvory</strong><br>
-      Premium lifestyle & commerce brand<br>
-      <a href="https://zalvory.co.za" target="_blank">Visit Website</a>
-    </li>
-    <br>
+    <div class="brands">
 
-    <li>
-      <strong>Aquavra</strong><br>
-      Wellness & hydration solutions<br>
-      <a href="https://aquavra.co.za" target="_blank">Visit Website</a>
-    </li>
-    <br>
+      <div class="brand-card">
+        <h3>PriceSmart</h3>
+        <p>
+          A subscription-based data aggregation app helping South Africans
+          discover retail specials and pricing information.
+        </p>
+        <a href="/pricesmart/">Learn more</a>
+      </div>
 
-    <li>
-      <strong>PriceSmart</strong><br>
-      Smart shopping & comparison platform<br>
-      <a href="/pricesmart/">Learn more</a>
-    </li>
-    <br>
+      <div class="brand-card">
+        <h3>Zalvory</h3>
+        <p>
+          An independent e-commerce brand offering curated lifestyle products
+          through its own platform.
+        </p>
+        <a href="https://zalvory.co.za" target="_blank">Visit website</a>
+      </div>
 
-    <li>
-      <strong>WildPath</strong><br>
-      South African travel & tour marketplace<br>
-      <a href="/wildpath/">Learn more</a>
-    </li>
-  </ul>
-</section>
+      <div class="brand-card">
+        <h3>Aquavra</h3>
+        <p>
+          A wellness-focused brand delivering hydration and lifestyle solutions,
+          operating independently.
+        </p>
+        <a href="https://aquavra.com" target="_blank">Visit website</a>
+      </div>
 
-<hr>
+      <div class="brand-card">
+        <h3>WildPath</h3>
+        <p>
+          A South African travel and tour discovery platform connecting travellers
+          with verified local operators.
+        </p>
+        <a href="/wildpath/">Learn more</a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
 
 <footer>
-  <p>© VG Corp (Pty) Ltd</p>
+  <p>© VG Corp (Pty) Ltd | South Africa</p>
 </footer>
 
 </body>
 </html>
-
