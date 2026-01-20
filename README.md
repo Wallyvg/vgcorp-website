@@ -88,7 +88,7 @@ All legal, payments, and app-related content is handled **per brand**, not at VG
 For corporate or administrative enquiries:
 
 **Email:** wallyvg@mweb.co.za  
-**Director:** Wally van Greunen  
+**Director:** Wally van Greune  
 **Country:** South Africa  
 
 ---
