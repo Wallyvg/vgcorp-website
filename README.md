@@ -18,7 +18,7 @@ Nexus is the central powerhouse of the ecosystem. It serves as an enterprise-gra
 A subscription-based platform providing deep-dive insights into the South African consumer market. PriceSmart aggregates retail data to empower smarter purchasing decisions and inventory tracking.
 * **Core Flow:** Welcome → Subscription Choice → Location-Based Specials → Grocery Management.
 
-### 3. [Aquavra](/aquavra/)
+### 3. [Aquavra](https://www.aquavra.com)
 **Wellness & Mobility Ecosystem**
 Aquavra focuses on the "Living" side of the portfolio, producing professional-grade digital products, travel planners, and fitness resources centered on hydration and functional mobility.
 * **Identity:** Emerald Greens and Deep Teals (#2f9660, #057ba8).
@@ -33,14 +33,17 @@ A dedicated mobile application designed to connect international travelers with 
 * **Frameworks:** Flutter, Firebase.
 * **Design:** Canva (Brand Identity & Digital Assets).
 * **Development:** VS Code on Laptop environment.
-* **Deployment:** GitHub Pages / Vercel.
-
-## 📬 Contact & Administration
-For corporate inquiries, partnership opportunities, or legal documentation:
-* **Accountant:** Wally van Greune
-* **Email:** wallyvg@vgcorp.co.za
-* **Directot:** Cornelius van Greune
-* **Email:** corrie@vgcorp.co.za
+* **Version Control:** GitHub Managed.
 
 ---
-*© 2026 VG Corp (Pty) Ltd. Built with precision in South Africa.*
+
+## 📬 Contact & Administration
+
+For corporate inquiries, financial matters, or legal documentation:
+
+* **Director:** Corrie van Greune | **Email:** [corrie@vgcorp.co.za](mailto:corrie@vgcorp.co.za)
+* **Accountant:** Wally van Greune | **Email:** [wally@vgcorp.co.za](mailto:wally@vgcorp.co.za)
+* **General Enquiries:** [info@vgcorp.co.za](mailto:info@vgcorp.co.za)
+
+---
+*© 2025 VG Corp (Pty) Ltd. Built with precision in South Africa.*
