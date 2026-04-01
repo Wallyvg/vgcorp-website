@@ -1,102 +1,46 @@
 # VG Corp (Pty) Ltd
 
-VG Corp (Pty) Ltd is a South African holding company that owns and manages a growing portfolio of independent brands. Each brand operates autonomously with its own platform, legal structure, and customer base, while VG Corp provides strategic oversight, governance, and brand alignment.
+**Strategic Digital Portfolio & Automation**
 
-This repository contains the **official VG Corp website**, which serves as a central reference point for the group and its projects.
-
----
-
-## 🏢 Company Overview
-
-**Registered Name:** VG Corp (Pty) Ltd  
-**Registration Number:** 2025/519458/07  
-**Jurisdiction:** South Africa  
-
-VG Corp is **not a technology company** and **does not sell products or services directly**. Its role is to hold, manage, and support independent ventures that aim to simplify everyday living through data, travel, wellness, and lifestyle solutions.
+VG Corp is a South African holding company specializing in the development and management of high-growth digital ecosystems. We bridge the gap between complex technology and consumer utility through intelligent automation, retail data intelligence, and wellness-driven digital products.
 
 ---
 
-## 🌍 Brands & Projects
+## 🚀 Active Portfolio
 
-The VG Corp website showcases the following brands:
+### 1. [Nexus](/nexus/)
+**"One Platform. Many Agents. Real Work."**
+Nexus is the central powerhouse of the ecosystem. It serves as an enterprise-grade hub for autonomous digital agents and automation workflows, designed to handle high-level execution with neural intelligence.
+* **Core Colors:** Nexus Blue (#2563EB), Electric Violet (#7C3AED), and Neural Teal (#22D3EE).
 
-### PriceSmart  
-A South African, subscription-based **data aggregation app** that helps users discover retail specials and pricing insights.  
-- Non-purchasing platform  
-- Available via Google Play (South Africa)  
-- Operates independently under VG Corp  
+### 2. [PriceSmart](/pricesmart/)
+**Retail Intelligence & Data Aggregation**
+A subscription-based platform providing deep-dive insights into the South African consumer market. PriceSmart aggregates retail data to empower smarter purchasing decisions and inventory tracking.
+* **Core Flow:** Welcome → Subscription Choice → Location-Based Specials → Grocery Management.
 
-### Zalvory  
-A standalone e-commerce and lifestyle brand operating on its own Shopify-powered website.  
-- Independent legal and commercial operations  
-- External website: https://zalvory.co.za  
+### 3. [Aquavra](/aquavra/)
+**Wellness & Mobility Ecosystem**
+Aquavra focuses on the "Living" side of the portfolio, producing professional-grade digital products, travel planners, and fitness resources centered on hydration and functional mobility.
+* **Identity:** Emerald Greens and Deep Teals (#2f9660, #057ba8).
 
-### Aquavra  
-A wellness-focused brand offering hydration and lifestyle solutions through its own platform.  
-- Independent legal and commercial operations  
-- External website: https://aquavra.com  
-
-### WildPath  
-A South African travel and tour discovery platform currently under development.  
-- Connects travellers with verified operators  
-- Will operate independently with its own legal agreements  
-- Listed on the VG Corp website for project visibility only  
+### 4. [WildPath](/wildpath/)
+**Premium Travel Discovery**
+A dedicated mobile application designed to connect international travelers with verified South African tour operators, ensuring safety and quality in the local tourism sector.
 
 ---
 
-## 📁 Repository Purpose
+## 🛠 Tech Stack & Infrastructure
+* **Frameworks:** Flutter, Firebase.
+* **Design:** Canva (Brand Identity & Digital Assets).
+* **Development:** VS Code on Laptop environment.
+* **Deployment:** GitHub Pages / Vercel.
 
-This repository is used to:
-
-- Host the **VG Corp holding company website**
-- Present brand overviews and external links
-- Establish SEO and brand structure
-- Act as a foundation for future brand additions
-
-This repository **does not** contain:
-- E-commerce functionality
-- Payment processing
-- App logic or APIs
-- Legal agreements for individual brands
+## 📬 Contact & Administration
+For corporate inquiries, partnership opportunities, or legal documentation:
+* **Accountant:** Wally van Greune
+* **Email:** wallyvg@vgcorp.co.za
+* **Directot:** Cornelius van Greune
+* **Email:** corrie@vgcorp.co.za
 
 ---
-
-## 🧱 Project Status
-
-Current development phase:
-- ✅ Structure & branding
-- ✅ Brand separation and clarity
-- ✅ SEO foundation
-- ⏳ Legal documentation (per brand)
-- ⏳ App store compliance content
-- ⏳ Payments and subscriptions (brand-specific)
-
-All legal, payments, and app-related content is handled **per brand**, not at VG Corp level.
-
----
-
-## ⚠️ Important Notes
-
-- Each brand is responsible for its own Terms & Conditions, Privacy Policy, and regulatory compliance.
-- VG Corp does not process customer payments or collect end-user data directly.
-- External brand websites and apps are linked for convenience only.
-
----
-
-## 📫 Contact
-
-For corporate or administrative enquiries:
-
-**Email:** wallyvg@mweb.co.za  
-**Director:** Wally van Greune  
-**Country:** South Africa  
-
----
-
-© VG Corp (Pty) Ltd. All rights reserved.
-
-
----
-
-© 2025 VG Corp (Pty) Ltd. All rights reserved.
-
+*© 2026 VG Corp (Pty) Ltd. Built with precision in South Africa.*
