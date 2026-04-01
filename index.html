@@ -8,7 +8,6 @@
 
   <style>
     :root {
-      /* VG Corp & Nexus Palette */
       --primary: #0B0F1A;    /* Deep Space Navy */
       --secondary: #121826;  /* Midnight Slate */
       --accent: #2563EB;     /* Nexus Blue */
@@ -73,8 +72,6 @@
       color: #ffffff;
       padding: 80px 20px;
       text-align: center;
-      position: relative;
-      overflow: hidden;
     }
 
     header h1 {
@@ -126,12 +123,21 @@
       transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
       display: flex;
       flex-direction: column;
+      text-decoration: none; /* Remove underline from card links */
     }
 
     .brand-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 25px rgba(0,0,0,0.05);
       border-color: var(--accent);
+    }
+
+    .brand-logo-img {
+      height: 50px;
+      width: auto;
+      object-fit: contain;
+      margin-bottom: 20px;
+      display: block;
     }
 
     .brand-card h3 {
@@ -143,37 +149,14 @@
     .brand-card p {
       font-size: 15px;
       color: #4b5563;
-      flex-grow: 1;
+      margin-bottom: 20px;
     }
 
-    .brand-card .tag {
-      display: inline-block;
-      padding: 4px 10px;
-      border-radius: 4px;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-      letter-spacing: 0.5px;
-    }
-
-    /* Specific Brand Accents */
-    .tag-nexus { background: #7C3AED20; color: var(--energy); }
-    .tag-pricesmart { background: #2563EB20; color: var(--accent); }
-    .tag-aquavra { background: #2F966020; color: #2F9660; }
-    .tag-wildpath { background: #D1842120; color: #D18421; }
-
-    .brand-card a {
-      display: inline-block;
-      margin-top: 20px;
+    .brand-link {
       font-weight: 700;
       color: var(--accent);
-      text-decoration: none;
       font-size: 14px;
-    }
-
-    .brand-card a:hover {
-      text-decoration: underline;
+      margin-top: auto;
     }
 
     /* FOOTER */
@@ -229,41 +212,41 @@
 
     <div class="brands">
 
-      <div class="brand-card">
-        <span class="tag tag-nexus">AI & Automation</span>
+      <a href="/nexus/" class="brand-card">
+        <img src="assets/logos/Nexus.png" alt="Nexus Powerhouse Logo" class="brand-logo-img">
         <h3>Nexus</h3>
         <p>
           "One Platform. Many Agents. Real Work." The central hub for autonomous digital agents and enterprise automation.
         </p>
-        <a href="/nexus/">View Architecture</a>
-      </div>
+        <span class="brand-link">View Architecture &rarr;</span>
+      </a>
 
-      <div class="brand-card">
-        <span class="tag tag-pricesmart">Retail Intelligence</span>
+      <a href="/pricesmart/" class="brand-card">
+        <img src="assets/logos/pricesmart.png" alt="PriceSmart Logo" class="brand-logo-img">
         <h3>PriceSmart</h3>
         <p>
           Subscription-based retail data aggregation platform providing deep insights into the South African consumer market.
         </p>
-        <a href="/pricesmart/">Access Platform</a>
-      </div>
+        <span class="brand-link">Access Platform &rarr;</span>
+      </a>
 
-      <div class="brand-card">
-        <span class="tag tag-aquavra">Wellness</span>
+      <a href="/aquavra/" class="brand-card">
+        <img src="assets/logos/aquavra.png" alt="Aquavra Logo" class="brand-logo-img">
         <h3>Aquavra</h3>
         <p>
           Digital wellness and mobility ecosystem focused on hydration, fitness, and professional-grade digital products.
         </p>
-        <a href="/aquavra/">Explore Products</a>
-      </div>
+        <span class="brand-link">Explore Products &rarr;</span>
+      </a>
 
-      <div class="brand-card">
-        <span class="tag tag-wildpath">Travel Tech</span>
+      <a href="/wildpath/" class="brand-card">
+        <img src="assets/logos/wildpath.png" alt="WildPath Logo" class="brand-logo-img">
         <h3>WildPath</h3>
         <p>
           Premium travel discovery platform connecting global travellers with verified South African tour operators.
         </p>
-        <a href="/wildpath/">Tour Discovery</a>
-      </div>
+        <span class="brand-link">Tour Discovery &rarr;</span>
+      </a>
 
     </div>
   </section>
@@ -286,6 +269,3 @@
 
 </body>
 </html>
-</body>
-</html>
-
