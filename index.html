@@ -8,12 +8,12 @@
 
   <style>
     :root {
-      --primary: #0B0F1A;    /* Deep Space Navy */
-      --secondary: #121826;  /* Midnight Slate */
-      --accent: #2563EB;     /* Nexus Blue */
-      --energy: #7C3AED;     /* Electric Violet */
-      --success: #22D3EE;    /* Neural Teal */
-      --neutral: #94A3B8;    /* Muted Text */
+      --primary: #0B0F1A;
+      --secondary: #121826;
+      --accent: #2563EB;
+      --energy: #7C3AED;
+      --success: #22D3EE;
+      --neutral: #94A3B8;
       --background: #ffffff;
       --text: #1f2933;
       --border: #e5e7eb;
@@ -27,7 +27,6 @@
       line-height: 1.6;
     }
 
-    /* NAVIGATION */
     nav {
       background: #ffffff;
       border-bottom: 1px solid var(--border);
@@ -59,14 +58,8 @@
       color: var(--text);
       font-size: 14px;
       font-weight: 600;
-      transition: color 0.3s;
     }
 
-    .nav-links a:hover {
-      color: var(--accent);
-    }
-
-    /* HEADER */
     header {
       background: var(--primary);
       color: #ffffff;
@@ -78,7 +71,6 @@
       margin: 0;
       font-size: 42px;
       font-weight: 800;
-      letter-spacing: -1px;
     }
 
     header p {
@@ -90,7 +82,6 @@
       margin-right: auto;
     }
 
-    /* MAIN CONTENT */
     main {
       max-width: 1100px;
       margin: 60px auto;
@@ -108,7 +99,6 @@
       font-weight: 700;
     }
 
-    /* BRAND GRID */
     .brands {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -120,10 +110,10 @@
       border-radius: 12px;
       padding: 32px;
       background: #ffffff;
-      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+      transition: transform 0.3s, box-shadow 0.3s;
       display: flex;
       flex-direction: column;
-      text-decoration: none; /* Remove underline from card links */
+      text-decoration: none;
     }
 
     .brand-card:hover {
@@ -159,7 +149,6 @@
       margin-top: auto;
     }
 
-    /* FOOTER */
     footer {
       padding: 40px;
       text-align: center;
@@ -172,7 +161,6 @@
     .footer-text {
       color: #ffffff;
       font-weight: 600;
-      margin-bottom: 8px;
     }
   </style>
 </head>
@@ -203,7 +191,7 @@
     <p>
       VG Corp (Pty) Ltd is a South African holding company managing a diverse portfolio of digital frontiers. 
       From autonomous agent automation to retail data intelligence, we provide the foundational 
-      structure for brands to scale effectively in the modern digital economy.
+      structure for brands to scale effectively.
     </p>
   </section>
 
@@ -213,38 +201,30 @@
     <div class="brands">
 
       <a href="/nexus/" class="brand-card">
-        <img src="assets/logos/Nexus.png" alt="Nexus Powerhouse Logo" class="brand-logo-img">
+        <img src="assets/logos/Nexus.png" alt="Nexus" class="brand-logo-img">
         <h3>Nexus</h3>
-        <p>
-          "One Platform. Many Agents. Real Work." The central hub for autonomous digital agents and enterprise automation.
-        </p>
+        <p>"One Platform. Many Agents. Real Work." Central hub for autonomous digital agents.</p>
         <span class="brand-link">View Architecture &rarr;</span>
       </a>
 
       <a href="/pricesmart/" class="brand-card">
-        <img src="assets/logos/pricesmart.png" alt="PriceSmart Logo" class="brand-logo-img">
+        <img src="assets/logos/PriceSmart Logo.png" alt="PriceSmart" class="brand-logo-img">
         <h3>PriceSmart</h3>
-        <p>
-          Subscription-based retail data aggregation platform providing deep insights into the South African consumer market.
-        </p>
+        <p>Retail data aggregation platform providing deep consumer insights in South Africa.</p>
         <span class="brand-link">Access Platform &rarr;</span>
       </a>
 
       <a href="/aquavra/" class="brand-card">
-        <img src="assets/logos/aquavra.png" alt="Aquavra Logo" class="brand-logo-img">
+        <img src="assets/logos/Aquavra.png" alt="Aquavra" class="brand-logo-img">
         <h3>Aquavra</h3>
-        <p>
-          Digital wellness and mobility ecosystem focused on hydration, fitness, and professional-grade digital products.
-        </p>
+        <p>Wellness ecosystem focused on hydration, fitness, and professional mobility products.</p>
         <span class="brand-link">Explore Products &rarr;</span>
       </a>
 
       <a href="/wildpath/" class="brand-card">
-        <img src="assets/logos/wildpath.png" alt="WildPath Logo" class="brand-logo-img">
+        <img src="assets/logos/WILDPATH.png" alt="WildPath" class="brand-logo-img">
         <h3>WildPath</h3>
-        <p>
-          Premium travel discovery platform connecting global travellers with verified South African tour operators.
-        </p>
+        <p>Premium travel discovery platform connecting travelers with verified tour operators.</p>
         <span class="brand-link">Tour Discovery &rarr;</span>
       </a>
 
@@ -253,10 +233,7 @@
 
   <section id="contact">
     <h2>Administration</h2>
-    <p>
-      For corporate inquiries, partnership opportunities, or legal documentation.<br>
-      <strong>Email:</strong> wallyvg@mweb.co.za
-    </p>
+    <p>Corporate inquiries only.<br><strong>Email:</strong> wallyvg@mweb.co.za</p>
   </section>
 
 </main>
@@ -264,7 +241,6 @@
 <footer>
   <p class="footer-text">VG CORP (PTY) LTD</p>
   <p>South Africa | Built in VS Code | Managed via GitHub</p>
-  <p style="margin-top: 10px; font-size: 11px;">© 2026 All Rights Reserved.</p>
 </footer>
 
 </body>
