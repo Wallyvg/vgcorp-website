@@ -8,15 +8,13 @@
 
   <style>
     :root {
-      --primary: #0B0F1A;
-      --secondary: #121826;
-      --accent: #2563EB;
-      --energy: #7C3AED;
-      --success: #22D3EE;
-      --neutral: #94A3B8;
+      --primary: #0B0F1A;    /* Deep Space Navy */
+      --secondary: #121826;  /* Midnight Slate */
+      --accent: #2563EB;     /* Nexus Blue */
       --background: #ffffff;
       --text: #1f2933;
       --border: #e5e7eb;
+      --neutral: #94A3B8;
     }
 
     body {
@@ -149,18 +147,32 @@
       margin-top: auto;
     }
 
+    .admin-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .admin-list li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .admin-list strong {
+      color: var(--primary);
+    }
+
     footer {
       padding: 40px;
       text-align: center;
       font-size: 14px;
       color: var(--neutral);
       background: var(--secondary);
-      border-top: 1px solid var(--primary);
     }
 
     .footer-text {
       color: #ffffff;
       font-weight: 600;
+      margin-bottom: 8px;
     }
   </style>
 </head>
@@ -197,34 +209,33 @@
 
   <section id="brands">
     <h2>Active Portfolio</h2>
-
     <div class="brands">
 
       <a href="/nexus/" class="brand-card">
-        <img src="assets/logos/Nexus.png" alt="Nexus" class="brand-logo-img">
+        <img src="assets/logos/Nexus.png" alt="Nexus Logo" class="brand-logo-img">
         <h3>Nexus</h3>
-        <p>"One Platform. Many Agents. Real Work." Central hub for autonomous digital agents.</p>
+        <p>"One Platform. Many Agents. Real Work." The hub for autonomous digital agents.</p>
         <span class="brand-link">View Architecture &rarr;</span>
       </a>
 
       <a href="/pricesmart/" class="brand-card">
-        <img src="assets/logos/PriceSmart Logo.png" alt="PriceSmart" class="brand-logo-img">
+        <img src="assets/logos/PriceSmart Logo.png" alt="PriceSmart Logo" class="brand-logo-img">
         <h3>PriceSmart</h3>
-        <p>Retail data aggregation platform providing deep consumer insights in South Africa.</p>
+        <p>Retail data aggregation platform providing deep insights into the SA consumer market.</p>
         <span class="brand-link">Access Platform &rarr;</span>
       </a>
 
-      <a href="/aquavra/" class="brand-card">
-        <img src="assets/logos/Aquavra.png" alt="Aquavra" class="brand-logo-img">
+      <a href="https://www.aquavra.com" class="brand-card">
+        <img src="assets/logos/Aquavra.png" alt="Aquavra Logo" class="brand-logo-img">
         <h3>Aquavra</h3>
-        <p>Wellness ecosystem focused on hydration, fitness, and professional mobility products.</p>
+        <p>Wellness ecosystem focused on hydration, fitness, and professional mobility.</p>
         <span class="brand-link">Explore Products &rarr;</span>
       </a>
 
       <a href="/wildpath/" class="brand-card">
-        <img src="assets/logos/WILDPATH.png" alt="WildPath" class="brand-logo-img">
+        <img src="assets/logos/WILDPATH.png" alt="WildPath Logo" class="brand-logo-img">
         <h3>WildPath</h3>
-        <p>Premium travel discovery platform connecting travelers with verified tour operators.</p>
+        <p>Travel discovery platform connecting travelers with verified SA tour operators.</p>
         <span class="brand-link">Tour Discovery &rarr;</span>
       </a>
 
@@ -233,7 +244,12 @@
 
   <section id="contact">
     <h2>Administration</h2>
-    <p>Corporate inquiries only.<br><strong>Email:</strong> wallyvg@mweb.co.za</p>
+    <p>For corporate inquiries, financial matters, or legal documentation:</p>
+    <ul class="admin-list">
+      <li><strong>Director:</strong> Corrie van Greune — <a href="mailto:corrie@vgcorp.co.za">corrie@vgcorp.co.za</a></li>
+      <li><strong>Accountant:</strong> Wally van Greune — <a href="mailto:wally@vgcorp.co.za">wally@vgcorp.co.za</a></li>
+      <li><strong>General Enquiries:</strong> <a href="mailto:info@vgcorp.co.za">info@vgcorp.co.za</a></li>
+    </ul>
   </section>
 
 </main>
@@ -241,6 +257,7 @@
 <footer>
   <p class="footer-text">VG CORP (PTY) LTD</p>
   <p>South Africa | Built in VS Code | Managed via GitHub</p>
+  <p style="margin-top: 10px; font-size: 11px;">© 2026 All Rights Reserved.</p>
 </footer>
 
 </body>
