@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <title>VG Corp | Holding Brands That Simplify Everyday Living</title>
-
-  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing independent brands across retail intelligence, travel, wellness, and lifestyle solutions.">
-
+  <title>VG Corp | Strategic Digital Portfolio & Automation</title>
+  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing independent brands across AI automation, retail intelligence, travel, and wellness.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     :root {
-      --primary: #17183a;
-      --secondary: #265282;
-      --accent: #3795aa;
-      --highlight: #24c9bd;
-      --neutral: #adb7c2;
+      /* VG Corp & Nexus Palette */
+      --primary: #0B0F1A;    /* Deep Space Navy */
+      --secondary: #121826;  /* Midnight Slate */
+      --accent: #2563EB;     /* Nexus Blue */
+      --energy: #7C3AED;     /* Electric Violet */
+      --success: #22D3EE;    /* Neural Teal */
+      --neutral: #94A3B8;    /* Muted Text */
       --background: #ffffff;
       --text: #1f2933;
       --border: #e5e7eb;
@@ -23,7 +22,7 @@
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       background: var(--background);
       color: var(--text);
       line-height: 1.6;
@@ -33,7 +32,10 @@
     nav {
       background: #ffffff;
       border-bottom: 1px solid var(--border);
-      padding: 14px 20px;
+      padding: 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     .nav-container {
@@ -45,108 +47,149 @@
     }
 
     .nav-logo {
-      font-weight: bold;
+      font-weight: 800;
       color: var(--primary);
-      font-size: 18px;
+      font-size: 20px;
       text-decoration: none;
+      letter-spacing: 1px;
     }
 
     .nav-links a {
-      margin-left: 20px;
+      margin-left: 24px;
       text-decoration: none;
       color: var(--text);
       font-size: 14px;
       font-weight: 600;
+      transition: color 0.3s;
     }
 
     .nav-links a:hover {
-      color: var(--primary);
+      color: var(--accent);
     }
 
+    /* HEADER */
     header {
-      background: linear-gradient(
-        135deg,
-        var(--primary),
-        var(--secondary)
-      );
+      background: var(--primary);
       color: #ffffff;
-      padding: 56px 20px;
+      padding: 80px 20px;
       text-align: center;
+      position: relative;
+      overflow: hidden;
     }
 
     header h1 {
       margin: 0;
-      font-size: 38px;
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -1px;
     }
 
     header p {
-      margin-top: 14px;
-      font-size: 16px;
-      color: #eaf6fb;
+      margin-top: 18px;
+      font-size: 18px;
+      color: var(--neutral);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
+    /* MAIN CONTENT */
     main {
       max-width: 1100px;
-      margin: 70px auto;
+      margin: 60px auto;
       padding: 0 20px;
     }
 
     section {
-      margin-bottom: 90px;
+      margin-bottom: 80px;
     }
 
     h2 {
       color: var(--primary);
-      font-size: 28px;
-      margin-bottom: 18px;
+      font-size: 32px;
+      margin-bottom: 24px;
+      font-weight: 700;
     }
 
-    h3 {
-      color: var(--secondary);
-      margin-top: 0;
-    }
-
+    /* BRAND GRID */
     .brands {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 28px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
     }
 
     .brand-card {
       border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 28px;
+      border-radius: 12px;
+      padding: 32px;
       background: #ffffff;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+      display: flex;
+      flex-direction: column;
     }
 
-    .brand-card img {
-      max-width: 140px;
-      margin-bottom: 16px;
+    .brand-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      border-color: var(--accent);
+    }
+
+    .brand-card h3 {
+      margin: 0 0 12px 0;
+      font-size: 22px;
+      color: var(--primary);
     }
 
     .brand-card p {
-      font-size: 14px;
+      font-size: 15px;
+      color: #4b5563;
+      flex-grow: 1;
     }
+
+    .brand-card .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Specific Brand Accents */
+    .tag-nexus { background: #7C3AED20; color: var(--energy); }
+    .tag-pricesmart { background: #2563EB20; color: var(--accent); }
+    .tag-aquavra { background: #2F966020; color: #2F9660; }
+    .tag-wildpath { background: #D1842120; color: #D18421; }
 
     .brand-card a {
       display: inline-block;
-      margin-top: 16px;
-      font-weight: bold;
-      color: var(--highlight);
+      margin-top: 20px;
+      font-weight: 700;
+      color: var(--accent);
       text-decoration: none;
+      font-size: 14px;
     }
 
     .brand-card a:hover {
       text-decoration: underline;
     }
 
+    /* FOOTER */
     footer {
-      margin-top: 100px;
-      padding: 30px;
+      padding: 40px;
       text-align: center;
       font-size: 14px;
       color: var(--neutral);
-      border-top: 1px solid var(--border);
+      background: var(--secondary);
+      border-top: 1px solid var(--primary);
+    }
+
+    .footer-text {
+      color: #ffffff;
+      font-weight: 600;
+      margin-bottom: 8px;
     }
   </style>
 </head>
@@ -155,10 +198,10 @@
 
 <nav>
   <div class="nav-container">
-    <a href="#" class="nav-logo">VG Corp</a>
+    <a href="#" class="nav-logo">VG CORP</a>
     <div class="nav-links">
       <a href="#">Home</a>
-      <a href="#brands">Brands</a>
+      <a href="#brands">Portfolio</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
@@ -167,81 +210,82 @@
 
 <header>
   <h1>VG Corp</h1>
-  <p>Holding independent brands that simplify everyday living.</p>
+  <p>Engineering digital ecosystems through intelligent automation and consumer-centric technology.</p>
 </header>
 
 <main>
 
-  <!-- ABOUT -->
   <section id="about">
-    <h2>About VG Corp</h2>
+    <h2>Corporate Vision</h2>
     <p>
-      VG Corp (Pty) Ltd is a South African holding company that owns and manages
-      a portfolio of independent brands. Each brand operates autonomously with
-      its own platform, customers, and legal structure.
+      VG Corp (Pty) Ltd is a South African holding company managing a diverse portfolio of digital frontiers. 
+      From autonomous agent automation to retail data intelligence, we provide the foundational 
+      structure for brands to scale effectively in the modern digital economy.
     </p>
   </section>
 
-  <!-- BRANDS -->
   <section id="brands">
-    <h2>Our Brands & Projects</h2>
+    <h2>Active Portfolio</h2>
 
     <div class="brands">
 
       <div class="brand-card">
-        <img src="/assets/logos/pricesmart.png" alt="PriceSmart app logo">
+        <span class="tag tag-nexus">AI & Automation</span>
+        <h3>Nexus</h3>
+        <p>
+          "One Platform. Many Agents. Real Work." The central hub for autonomous digital agents and enterprise automation.
+        </p>
+        <a href="/nexus/">View Architecture</a>
+      </div>
+
+      <div class="brand-card">
+        <span class="tag tag-pricesmart">Retail Intelligence</span>
         <h3>PriceSmart</h3>
         <p>
-          Subscription-based retail data aggregation app for the South African market.
+          Subscription-based retail data aggregation platform providing deep insights into the South African consumer market.
         </p>
-        <a href="/pricesmart/">Learn more</a>
+        <a href="/pricesmart/">Access Platform</a>
       </div>
 
       <div class="brand-card">
-        <img src="/assets/logos/zalvory.png" alt="Zalvory lifestyle brand logo">
-        <h3>Zalvory</h3>
-        <p>
-          Independent lifestyle and e-commerce brand operating on its own platform.
-        </p>
-        <a href="https://zalvory.co.za" target="_blank">Visit website</a>
-      </div>
-
-      <div class="brand-card">
-        <img src="/assets/logos/aquavra.png" alt="Aquavra wellness brand logo">
+        <span class="tag tag-aquavra">Wellness</span>
         <h3>Aquavra</h3>
         <p>
-          Wellness and hydration-focused lifestyle brand with a standalone platform.
+          Digital wellness and mobility ecosystem focused on hydration, fitness, and professional-grade digital products.
         </p>
-        <a href="https://aquavra.com" target="_blank">Visit website</a>
+        <a href="/aquavra/">Explore Products</a>
       </div>
 
       <div class="brand-card">
-        <img src="/assets/logos/wildpath.png" alt="WildPath South Africa travel app logo">
+        <span class="tag tag-wildpath">Travel Tech</span>
         <h3>WildPath</h3>
         <p>
-          Travel and tour discovery platform connecting travellers with verified local operators.
+          Premium travel discovery platform connecting global travellers with verified South African tour operators.
         </p>
-        <a href="/wildpath/">Project overview</a>
+        <a href="/wildpath/">Tour Discovery</a>
       </div>
 
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact">
-    <h2>Contact</h2>
+    <h2>Administration</h2>
     <p>
-      Corporate enquiries only.<br>
-      Email: wallyvg@mweb.co.za
+      For corporate inquiries, partnership opportunities, or legal documentation.<br>
+      <strong>Email:</strong> wallyvg@mweb.co.za
     </p>
   </section>
 
 </main>
 
 <footer>
-  <p>© VG Corp (Pty) Ltd | South Africa</p>
+  <p class="footer-text">VG CORP (PTY) LTD</p>
+  <p>South Africa | Built in VS Code | Managed via GitHub</p>
+  <p style="margin-top: 10px; font-size: 11px;">© 2026 All Rights Reserved.</p>
 </footer>
 
+</body>
+</html>
 </body>
 </html>
 
