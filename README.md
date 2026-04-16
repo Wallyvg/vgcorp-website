@@ -43,7 +43,7 @@ For corporate inquiries, financial matters, or legal documentation:
 
 * **Director:** Corrie van Greune | **Email:** [corrie@vgcorp.co.za](mailto:corrie@vgcorp.co.za)
 * **Accountant:** Wally van Greune | **Email:** [wally@vgcorp.co.za](mailto:wally@vgcorp.co.za)
-* **General Enquiries:** [info@vgcorp.co.za](mailto:info@vgcorp.co.za)
+* **Contact:** 0107532039
 
 ---
 *© 2025 VG Corp (Pty) Ltd. Built with precision in South Africa.*
