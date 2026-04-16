@@ -92,8 +92,8 @@ This repository does **not** include:
 
 For corporate or administrative enquiries:
 
-**Director:** Wally van Greune  
-**Email:** wallyvg@mweb.co.za  
+**Accountant:** Wally van Greune  
+**Email:** wally@vgcorp.co.za  
 **Mobile:** +27 82 876 4974  
 
 ---
