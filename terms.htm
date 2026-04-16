@@ -17,11 +17,15 @@
       font-family: 'Segoe UI', system-ui, sans-serif;
       color: var(--text);
       line-height: 1.7;
+      background-color: #ffffff;
     }
     nav {
       background: #ffffff;
       border-bottom: 1px solid var(--border);
       padding: 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     .nav-container {
       max-width: 900px;
@@ -47,7 +51,7 @@
       color: white;
       padding: 40px 20px;
       text-align: center;
-      font-size: 14px;
+      font-size: 13px;
       margin-top: 80px;
     }
     .back-link {
@@ -56,6 +60,9 @@
         color: var(--accent);
         text-decoration: none;
         font-weight: 600;
+    }
+    .back-link:hover {
+        text-decoration: underline;
     }
   </style>
 </head>
@@ -69,8 +76,9 @@
 
 <div class="content">
   <a href="index.html" class="back-link">← Back to Home</a>
+  
   <h1>Terms of Service</h1>
-  <p class="last-updated">Last Updated: April 2024</p>
+  <p class="last-updated">Last Updated: April 2026</p>
 
   <section>
     <h2>1. Introduction</h2>
@@ -80,12 +88,12 @@
 
   <section>
     <h2>2. Merchant Domicile</h2>
-    <p>VG Corp (Pty) Ltd is a private company registered in South Africa. Our principal place of business is located in South Africa. All transactions are governed by the laws of the Republic of South Africa.</p>
+    <p>VG Corp (Pty) Ltd is a private company registered in South Africa. Our principal place of business and country of domicile is South Africa. All transactions and agreements are governed by the laws of the Republic of South Africa.</p>
   </section>
 
   <section>
     <h2>3. Use of Services</h2>
-    <p>Our platforms provide digital automation, retail data insights, and wellness information. You agree to use these services only for lawful purposes and in a way that does not infringe the rights of others.</p>
+    <p>Our platforms provide digital automation, retail data insights, and wellness information. You agree to use these services only for lawful purposes and in a way that does not infringe the rights of others or restrict their use and enjoyment of the service.</p>
   </section>
 
   <section>
@@ -95,12 +103,12 @@
 
   <section>
     <h2>5. Intellectual Property</h2>
-    <p>The content, logos (including the VG Corp, Nexus, PriceSmart, and Aquavra brands), and software code on this site are the exclusive property of VG Corp (Pty) Ltd and are protected by international copyright and trademark laws.</p>
+    <p>The content, logos (including the VG Corp, Nexus, PriceSmart, and Aquavra brands), and software code on this site are the exclusive property of VG Corp (Pty) Ltd and are protected by South African and international copyright and trademark laws.</p>
   </section>
 
   <section>
     <h2>6. Limitation of Liability</h2>
-    <p>To the maximum extent permitted by the Consumer Protection Act (CPA) of South Africa, VG Corp (Pty) Ltd shall not be liable for any indirect, incidental, or consequential damages resulting from the use or inability to use our digital services.</p>
+    <p>To the maximum extent permitted by the Consumer Protection Act (CPA) of South Africa, VG Corp (Pty) Ltd shall not be liable for any indirect, incidental, or consequential damages resulting from the use or inability to use our digital services or products.</p>
   </section>
 
   <section>
@@ -108,14 +116,15 @@
     <p>Questions about the Terms of Service should be sent to us at:</p>
     <p>
       <strong>VG Corp (Pty) Ltd</strong><br>
-      Email: <a href="mailto:wally@vgcorp.co.za">wally@vgcorp.co.za</a><br>
+      Email: <a href="mailto:wally@vgcorp.co.za" style="color: var(--accent); text-decoration: none;">wally@vgcorp.co.za</a><br>
       Phone: +27 82 876 4974
     </p>
   </section>
 </div>
 
 <footer>
-  <p>© 2024 VG Corp (Pty) Ltd. Registered in South Africa.</p>
+  <p>© 2026 VG Corp (Pty) Ltd | Reg No: 2025/519458/07</p>
+  <p style="opacity: 0.7; font-size: 11px; margin-top: 5px;">South Africa | Merchant Domicile: South Africa</p>
 </footer>
 
 </body>
