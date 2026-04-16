@@ -1,51 +1,101 @@
-VG Corp (Pty) Ltd
-Strategic Digital Portfolio & Automation
+# VG Corp (Pty) Ltd
 
-VG Corp (Pty) Ltd is a South African holding company specializing in the development and management of high-growth digital ecosystems. We bridge the gap between complex technology and consumer utility through intelligent automation, retail data intelligence, and wellness-driven digital products.
+VG Corp (Pty) Ltd is a South African holding company that owns and manages a portfolio of independent brands focused on simplifying everyday living.
 
-Registration Number: 2025/519458/07
+Each brand operates autonomously with its own platform, customer base, and legal framework, while VG Corp provides strategic oversight, governance, and brand alignment.
 
-Country of Domicile: South Africa
+---
 
-🚀 Active Portfolio
-1. Nexus
-"One Platform. Many Agents. Real Work."
-Nexus is the central powerhouse of the ecosystem. It serves as an enterprise-grade hub for autonomous digital agents and automation workflows, designed to handle high-level execution with neural intelligence.
+## 🏢 Company Information
 
-Core Colors: Nexus Blue (#2563EB), Electric Violet (#7C3AED), and Neural Teal (#22D3EE).
+**Registered Name:** VG Corp (Pty) Ltd  
+**Registration Number:** 2025/519458/07  
+**Country of Domicile:** South Africa  
 
-2. PriceSmart
-Retail Intelligence & Data Aggregation
-A subscription-based platform providing deep-dive insights into the South African consumer market. PriceSmart aggregates retail data to empower smarter purchasing decisions and inventory tracking.
+VG Corp does not directly sell products or services.  
+All commercial activities are conducted through its individual brands.
 
-Core Flow: Welcome → Subscription Choice → Location-Based Specials → Grocery Management.
+---
 
-3. Aquavra
-Wellness & Mobility Ecosystem
-Aquavra focuses on the "Living" side of the portfolio, producing professional-grade digital products, travel planners, and fitness resources centered on hydration and functional mobility.
+## 🌍 Active Portfolio
 
-Identity: Emerald Greens and Deep Teals (#2f9660, #057ba8).
+### PriceSmart  
+**Retail Data Aggregation Platform**
 
-4. WildPath
-Premium Travel Discovery
-A dedicated mobile application designed to connect international travelers with verified South African tour operators, ensuring safety and quality in the local tourism sector.
+A South African subscription-based application that aggregates retail pricing and promotional data to help consumers make more informed purchasing decisions.
 
-🛠 Tech Stack & Infrastructure
-Frameworks: Flutter, Firebase.
+- Non-purchasing platform  
+- Data-driven insights  
+- Subscription-based model  
 
-Development: VS Code Environment.
+---
 
-Version Control: GitHub Managed.
+### Zalvory  
+**Lifestyle & E-commerce Brand**
 
-Transaction Security: PCI-DSS Compliant Secure Gateways (ZAR).
+An independent online retail brand operating on its own platform, offering curated lifestyle and consumer products.
 
-📬 Contact & Administration
-For corporate inquiries, financial matters, or legal documentation:
+- Operates independently  
+- Own Terms & Conditions and payment systems  
+- External website  
 
-Director: Corrie van Greune | Email: corrie@vgcorp.co.za
+---
 
-Accountant & Information Officer: Wally van Greune | Email: wally@vgcorp.co.za
+### Aquavra  
+**Wellness & Lifestyle Brand**
 
-Mobile: +27 82 876 4974
+A wellness-focused brand offering hydration, travel, and performance-based lifestyle products and digital resources.
 
-© 2026 VG Corp (Pty) Ltd. Registered in South Africa. All transactions are processed in South African Rand (ZAR).
+- Independent platform  
+- Separate legal and commercial structure  
+
+---
+
+### WildPath  
+**Travel Discovery Platform (In Development)**
+
+A South African travel application connecting travellers with verified local operators across all nine provinces.
+
+- Platform-based model (not a tour operator)  
+- PayFast payment integration (10% / 90% split)  
+- Safety-focused features including SOS and operator verification  
+
+---
+
+## 📁 Repository Purpose
+
+This repository hosts the **VG Corp holding company website**, which:
+
+- Presents the portfolio of brands
+- Provides high-level brand information
+- Links to external platforms and applications
+- Supports SEO and digital presence
+
+This repository does **not** include:
+
+- Payment systems  
+- E-commerce functionality  
+- Mobile app source code  
+- Brand-specific legal agreements  
+
+---
+
+## ⚠️ Important Notes
+
+- Each brand operates independently and maintains its own legal documentation.
+- VG Corp does not act as a retailer, travel agent, or service provider.
+- External platforms are linked for convenience and operate under their own terms.
+
+---
+
+## 📬 Contact
+
+For corporate or administrative enquiries:
+
+**Director:** Wally van Greune  
+**Email:** wallyvg@mweb.co.za  
+**Mobile:** +27 82 876 4974  
+
+---
+
+© VG Corp (Pty) Ltd. Registered in South Africa.
