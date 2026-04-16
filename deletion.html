@@ -4,89 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Deletion | VG Corp (Pty) Ltd</title>
+
     <style>
         :root {
-            --primary: #0B0F1A;
-            --accent: #2563EB;
-            --slate: #121826;
-            --border: #1E2538;
-            --teal: #22D3EE;
-            --text: #E5E7EB;
+            --primary: #17183a;
+            --secondary: #265282;
+            --accent: #3795aa;
+            --highlight: #24c9bd;
+            --border: #e5e7eb;
+            --text: #1f2933;
+            --bg: #ffffff;
         }
+
         body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            font-family: Arial, sans-serif; 
             line-height: 1.6; 
             color: var(--text); 
-            background-color: var(--primary); 
+            background-color: var(--bg); 
             max-width: 700px; 
             margin: 0 auto; 
             padding: 20px; 
         }
-        nav { padding: 20px 0; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
-        .nav-logo { font-weight: 800; color: #ffffff; text-decoration: none; font-size: 18px; }
-        
-        h1 { color: var(--accent); border-bottom: 2px solid var(--border); padding-bottom: 10px; }
-        h3 { color: var(--teal); margin-top: 25px; }
-        
+
+        nav { 
+            padding: 20px 0; 
+            border-bottom: 1px solid var(--border); 
+            margin-bottom: 40px; 
+        }
+
+        .nav-logo { 
+            font-weight: 800; 
+            color: var(--primary); 
+            text-decoration: none; 
+            font-size: 18px; 
+        }
+
+        h1 { 
+            color: var(--primary); 
+            border-bottom: 2px solid var(--accent); 
+            padding-bottom: 10px; 
+        }
+
+        h3 { 
+            color: var(--secondary); 
+            margin-top: 25px; 
+        }
+
         .box { 
             border: 1px solid var(--border); 
             padding: 30px; 
             border-radius: 12px; 
-            background: var(--slate); 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            background: #ffffff; 
         }
-        .back-link { color: var(--teal); text-decoration: none; font-size: 14px; display: inline-block; margin-bottom: 20px; }
-        
-        strong { color: var(--accent); }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-        
+
+        .back-link { 
+            color: var(--highlight); 
+            text-decoration: none; 
+            font-size: 14px; 
+            display: inline-block; 
+            margin-bottom: 20px; 
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        strong { 
+            color: var(--primary); 
+        }
+
+        ul { 
+            padding-left: 20px; 
+        }
+
+        li { 
+            margin-bottom: 10px; 
+        }
+
         .footer { 
             margin-top: 60px; 
             font-size: 0.85em; 
-            color: #94A3B8; 
+            color: #6b7280; 
             text-align: center;
             border-top: 1px solid var(--border);
             padding-top: 20px;
         }
-        .support-link { color: var(--teal); text-decoration: none; font-weight: bold; border-bottom: 1px solid transparent; }
-        .support-link:hover { border-bottom: 1px solid var(--teal); }
+
+        .support-link { 
+            color: var(--highlight); 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+
+        .support-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
+
 <body>
 
 <nav>
-    <a href="index.html" class="nav-logo">VG CORP</a>
+    <!-- ✅ FIXED -->
+    <a href="/index.html" class="nav-logo">VG CORP</a>
 </nav>
 
-<a href="index.html" class="back-link">← Back to Home</a>
+<!-- ✅ FIXED -->
+<a href="/index.html" class="back-link">← Back to Home</a>
 
 <div class="box">
+
     <h1>Account Deletion</h1>
-    <p>At <strong>VG Corp (Pty) Ltd</strong>, your privacy and data security are our top priorities. In compliance with <strong>POPIA</strong>, if you wish to deactivate your account and permanently remove your data from our ecosystem (including WildPath, Nexus, or PriceSmart), please follow the process below.</p>
-    
-    <h3>How to Request Deletion:</h3>
-    <p>To verify your identity and protect your data, please send an email from your registered email address to:</p>
-    <p><a href="mailto:wally@vgcorp.co.za" class="support-link">wally@vgcorp.co.za</a></p>
-    
+
+    <p>
+        At <strong>VG Corp (Pty) Ltd</strong>, your privacy and data protection are important to us. 
+        In accordance with the <strong>Protection of Personal Information Act (POPIA)</strong>, 
+        users may request the deletion of their personal data associated with any VG Corp-related platform.
+    </p>
+
+    <p>
+        VG Corp operates as a holding company. Individual platforms such as PriceSmart, Zalvory, Aquavra, 
+        and WildPath may process user data independently under their own policies.
+    </p>
+
+    <h3>How to Request Deletion</h3>
+
+    <p>
+        To request account deletion, please send an email from your registered email address to:
+    </p>
+
+    <p>
+        <a href="mailto:wally@vgcorp.co.za" class="support-link">wally@vgcorp.co.za</a>
+    </p>
+
     <ul>
         <li><strong>Subject:</strong> Account Deletion Request</li>
-        <li><strong>Required Info:</strong> Your full name and the specific platform account you wish to remove.</li>
+        <li><strong>Required Information:</strong> Your full name and the platform you are requesting deletion from</li>
     </ul>
 
-    <h3>Data Retention & Removal:</h3>
-    <p>Once your request is verified (typically within 48–72 hours), the following data will be <strong>permanently purged</strong> from our secure Firebase environment:</p>
+    <h3>Data Removal</h3>
+
+    <p>Once your request is verified (typically within 48–72 hours), the following data will be permanently removed:</p>
+
     <ul>
-        <li><strong>User Profile:</strong> Identity details, contact numbers, and login credentials.</li>
-        <li><strong>Activity Data:</strong> Interaction logs, history, and preferences.</li>
-        <li><strong>Safety Data:</strong> Any stored emergency logs or safety contacts.</li>
+        <li>User profile information (name, contact details)</li>
+        <li>Account-related activity data</li>
+        <li>Associated platform records where applicable</li>
     </ul>
-    <p><em>Notice: This action is irreversible. Once the data is purged, it cannot be recovered.</em></p>
+
+    <p><em>This action is irreversible and cannot be undone.</em></p>
+
 </div>
 
 <div class="footer">
-    © 2026 VG Corp (Pty) Ltd | Reg: 2025/519458/07 <br>
-    <strong>One Platform. Many Agents. Real Work.</strong>
+    © 2026 VG Corp (Pty) Ltd | Reg: 2025/519458/07
 </div>
 
 </body>
