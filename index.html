@@ -161,18 +161,53 @@
       color: var(--primary);
     }
 
-    footer {
-      padding: 40px;
-      text-align: center;
-      font-size: 14px;
-      color: var(--neutral);
-      background: var(--secondary);
-    }
-
-    .footer-text {
+    /* COMPLIANCE FOOTER STYLES */
+    .comp-footer {
+      padding: 60px 20px 30px 20px;
+      background-color: var(--primary);
       color: #ffffff;
-      font-weight: 600;
-      margin-bottom: 8px;
+      font-size: 13px;
+    }
+    .comp-footer-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+    }
+    .comp-footer h4 {
+      color: var(--neutral);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+    .comp-footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .comp-footer ul li {
+      margin-bottom: 10px;
+    }
+    .comp-footer a {
+      color: #cbd5e1;
+      text-decoration: none;
+    }
+    .comp-footer a:hover {
+      color: #ffffff;
+    }
+    .payment-badges {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .badge {
+      border: 1px solid #334155;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      color: var(--neutral);
     }
   </style>
 </head>
@@ -254,10 +289,41 @@
 
 </main>
 
-<footer>
-  <p class="footer-text">VG CORP (PTY) LTD</p>
-  <p>South Africa | Built in VS Code | Managed via GitHub</p>
-  <p style="margin-top: 10px; font-size: 11px;">© 2026 All Rights Reserved.</p>
+<footer class="comp-footer">
+  <div class="comp-footer-container">
+    <div>
+      <h4>Merchant Identity</h4>
+      <p style="color: #f8fafc; font-weight: 600; margin-bottom: 5px;">VG Corp (Pty) Ltd</p>
+      <p>Reg No: [INSERT YOUR REG NUMBER HERE]</p>
+      <p>[INSERT YOUR PHYSICAL OFFICE ADDRESS HERE]</p>
+      <p>South Africa</p>
+    </div>
+
+    <div>
+      <h4>Governance</h4>
+      <ul>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="privacy.html">Privacy & POPI Policy</a></li>
+        <li><a href="refunds.html">Refund & Cancellation</a></li>
+        <li><a href="delivery.html">Fulfillment Policy</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Secure Transactions</h4>
+      <p>All transactions are processed in South African Rand (ZAR).</p>
+      <div class="payment-badges">
+        <div class="badge">VISA</div>
+        <div class="badge">MASTERCARD</div>
+        <div class="badge">SECURE EFT</div>
+      </div>
+      <p style="font-size: 11px; margin-top: 15px; color: var(--neutral);">VG Corp is a South African based company.</p>
+    </div>
+  </div>
+
+  <div style="max-width: 1100px; margin: 40px auto 0 auto; padding-top: 20px; border-top: 1px solid #1e293b; text-align: center; color: var(--neutral); font-size: 11px;">
+    <p>© 2026 VG Corp (Pty) Ltd. All Rights Reserved. Managed via GitHub.</p>
+  </div>
 </footer>
 
 </body>
