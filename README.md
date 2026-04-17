@@ -10,10 +10,8 @@ The company operates as a structured ecosystem where each brand functions indepe
 ## 🚀 Active Brand Portfolio
 
 ### 🧠 Nexus  
-**Central Intelligence Layer**  
-Nexus serves as the operational backbone of the VG Corp ecosystem. It enables intelligent automation, workflow orchestration, and scalable execution across multiple digital platforms.
-
-🔗 https://vgcorp.co.za/nexus/
+**Coming Soon**  
+Nexus will serve as the central intelligence layer of the VG Corp ecosystem, designed to automate workflows, manage digital operations, and enable scalable execution across multiple platforms.
 
 ---
 
@@ -56,7 +54,7 @@ WildPath connects travellers with verified South African operators, offering a s
 - Aligned with the **Consumer Protection Act (CPA)** of South Africa  
 - Payment processing via **PCI-DSS compliant secure gateways**  
 - All transactions conducted in **South African Rand (ZAR)**  
-- **Merchant Domicile:** Cape Town, South Africa  
+- **Merchant Domicile:** South Africa  
 
 ---
 
@@ -74,6 +72,15 @@ WildPath connects travellers with verified South African operators, offering a s
 - **Official Website:** https://www.vgcorp.co.za  
 
 ---
+
+## 🧭 Positioning Statement
+
+> A structured ecosystem of independent platforms designed to simplify, automate, and elevate everyday life.
+
+---
+
+© 2026 VG Corp (Pty) Ltd  
+Built with precision in South Africa.
 
 ## 🧭 Positioning Statement
 
