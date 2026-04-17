@@ -169,8 +169,14 @@
     .contact-info p { opacity: 0.8; margin: 0; }
 
     .contact-links { display: flex; flex-direction: column; gap: 15px; }
-    .contact-links div { background: rgba(255,255,255,0.1); padding: 15px 25px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.2); }
-    .contact-links strong { display: block; font-size: 0.7rem; text-transform: uppercase; opacity: 0.6; }
+    .contact-links div { 
+      background: rgba(255,255,255,0.1); 
+      padding: 15px 25px; 
+      border-radius: 15px; 
+      border: 1px solid rgba(255,255,255,0.2); 
+      font-weight: 600; /* Professional Bold Weight */
+    }
+    .contact-links strong { display: block; font-size: 0.7rem; text-transform: uppercase; opacity: 0.6; margin-bottom: 4px; }
 
     /* Footer */
     footer {
@@ -182,7 +188,7 @@
 
     @media (max-width: 768px) {
       .contact-card { padding: 40px; text-align: center; justify-content: center; }
-      .nav-links { display: none; } /* Hide complex nav on mobile for space */
+      .nav-links { display: none; } 
     }
   </style>
 </head>
@@ -254,7 +260,7 @@
 </main>
 
 <footer>
-  <p>© 2026 VG Corp (Pty) Ltd | Registration: 2025/519458/07</p>
+  <p><strong>© 2026 VG Corp (Pty) Ltd</strong> | Registration: 2025/519458/07</p>
   <p style="opacity: 0.6;">Merchant Domicile: Cape Town, South Africa</p>
 </footer>
 
