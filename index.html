@@ -2,228 +2,307 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>VG Corp (Pty) Ltd | Holding Company</title>
+  <title>VG Corp (Pty) Ltd | Strategic Digital Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing independent brands including Nexus, PriceSmart, Aquavra, and WildPath.">
+  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing a portfolio of independent digital brands including Nexus, PriceSmart, Aquavra, and WildPath.">
 
   <style>
     :root {
-      --primary: #17183a;
-      --secondary: #265282;
-      --accent: #3795aa;
-      --highlight: #24c9bd;
-      --neutral: #adb7c2;
-      --text: #1f2933;
+      --primary: #17183a;    /* Deep Navy */
+      --secondary: #265282;  /* Corporate Blue */
+      --accent: #3795aa;     /* Ocean Teal */
+      --highlight: #24c9bd;  /* Bright Mint */
+      --neutral-bg: #f8fafc;
+      --text-main: #1f2933;
+      --text-muted: #4b5563;
       --border: #e5e7eb;
+      --white: #ffffff;
     }
+
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--white);
+      color: var(--text-main);
       line-height: 1.6;
     }
 
+    /* Navigation */
     header {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
-      padding: 20px;
-      background: #ffffff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    .nav {
-      max-width: 1100px;
+    .nav-container {
+      max-width: 1200px;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .logo {
-      font-weight: bold;
-      font-size: 20px;
+    .brand-logo {
+      font-weight: 800;
+      font-size: 1.5rem;
+      letter-spacing: -0.5px;
       color: var(--primary);
       text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
     .nav-links a {
-      margin-left: 20px;
+      margin-left: 25px;
       text-decoration: none;
-      color: var(--secondary);
-      font-weight: 600;
+      color: var(--text-muted);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    /* Hero Section */
+    .hero {
+      padding: 100px 20px 60px;
+      text-align: center;
+      background: radial-gradient(circle at top right, #f0f9ff, var(--white));
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      color: var(--primary);
+      margin: 0 auto 20px;
+      max-width: 900px;
+      line-height: 1.1;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    /* Grid Section */
+    .section-label {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 40px;
     }
 
     .container {
-      max-width: 1100px;
-      margin: 60px auto;
+      max-width: 1200px;
+      margin: 0 auto 100px;
       padding: 0 20px;
     }
 
-    h1 {
-      color: var(--primary);
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      margin-top: 50px;
-      color: var(--primary);
-      border-bottom: 2px solid var(--border);
-      display: inline-block;
-      padding-bottom: 5px;
-    }
-
-    .projects {
+    .brand-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
     }
 
-    .card {
+    .brand-card {
+      background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 25px;
-      background: #ffffff;
-      text-align: center;
+      border-radius: 16px;
+      padding: 40px 30px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       display: flex;
       flex-direction: column;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    }
-
-    .card img {
-      max-width: 140px;
-      height: 90px;
-      object-fit: contain;
-      margin: 0 auto 15px auto;
-    }
-
-    .card h3 {
-      margin-top: 10px;
-      color: var(--primary);
-      font-size: 20px;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #4b5563;
-      flex-grow: 1;
-      margin-bottom: 20px;
-    }
-
-    .card a {
-      display: inline-block;
-      padding: 10px 15px;
-      color: var(--secondary);
-      text-decoration: none;
-      font-weight: bold;
-      border: 1px solid var(--secondary);
-      border-radius: 6px;
-      transition: all 0.2s;
-    }
-
-    .card a:hover {
-      background: var(--secondary);
-      color: #fff;
-    }
-
-    .contact {
-      margin-top: 60px;
-      padding: 30px;
-      background: #f8fafc;
-      border-left: 5px solid var(--accent);
-      border-radius: 0 12px 12px 0;
-    }
-
-    footer {
-      margin-top: 100px;
-      padding: 40px;
+      align-items: center;
       text-align: center;
-      font-size: 13px;
-      color: var(--neutral);
+    }
+
+    .brand-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(23, 24, 58, 0.08);
+      border-color: var(--accent);
+    }
+
+    .brand-card img {
+      height: 70px;
+      width: auto;
+      margin-bottom: 25px;
+      object-fit: contain;
+    }
+
+    .brand-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: var(--primary);
+    }
+
+    .brand-card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 25px;
+      flex-grow: 1;
+    }
+
+    .btn-brand {
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+      width: 100%;
+      border: 1px solid var(--border);
+      color: var(--primary);
+    }
+
+    .brand-card:hover .btn-brand {
+      background: var(--primary);
+      color: var(--white);
+      border-color: var(--primary);
+    }
+
+    /* Contact Block */
+    .contact-banner {
+      background: var(--neutral-bg);
+      border-radius: 24px;
+      padding: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .contact-info h2 { font-size: 2rem; color: var(--primary); margin-top: 0; }
+
+    .contact-details div {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: var(--white);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .contact-details strong { display: block; color: var(--accent); font-size: 0.8rem; text-transform: uppercase; }
+
+    /* Footer */
+    footer {
+      padding: 80px 20px 40px;
       border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+    }
+
+    .footer-links { margin-bottom: 30px; }
+    .footer-links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    .footer-links a:hover { color: var(--primary); }
+
+    .legal-line { font-size: 0.75rem; opacity: 0.6; margin-top: 10px; }
+
+    @media (max-width: 768px) {
+      .contact-banner { grid-template-columns: 1fr; padding: 30px; }
+      .hero h1 { font-size: 2.5rem; }
     }
   </style>
 </head>
-
 <body>
 
 <header>
-  <div class="nav">
-    <a href="/index.html" class="logo">VG CORP</a>
-
-    <div class="nav-links">
+  <div class="nav-container">
+    <a href="/index.html" class="brand-logo">VG CORP</a>
+    <nav class="nav-links">
       <a href="/index.html">Home</a>
       <a href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
-      <a href="/refunds.html">Refunds</a>
       <a href="/contact.html">Contact</a>
-    </div>
+    </nav>
   </div>
 </header>
 
-<div class="container">
+<main>
+  <section class="hero">
+    <h1>Strategic Holding & Digital Innovation</h1>
+    <p>Managing a diversified portfolio of South African brands focused on intelligent automation, retail data, and wellness.</p>
+  </section>
 
-  <h1>VG Corp (Pty) Ltd</h1>
+  <div class="container">
+    <div class="section-label">Our Active Brands</div>
+    <div class="brand-grid">
 
-  <p style="font-size: 18px; color: #4b5563; max-width: 800px;">
-    VG Corp (Pty) Ltd is a South African holding company that owns and manages 
-    independent brands focused on simplifying everyday life through intelligent 
-    automation, retail intelligence, and wellness-driven digital products.
-  </p>
+      <div class="brand-card">
+        <img src="assets/logos/Nexus.png" alt="Nexus Logo">
+        <h3>Nexus</h3>
+        <p>Central automation platform powering intelligent workflows and scalable digital execution across the ecosystem.</p>
+        <a href="#" class="btn-brand">Internal System</a>
+      </div>
 
-  <h2>Our Brands</h2>
+      <div class="brand-card">
+        <img src="assets/logos/PriceSmart%20Logo.png" alt="PriceSmart Logo">
+        <h3>PriceSmart</h3>
+        <p>Retail intelligence platform helping consumers save through data-driven price aggregation and insights.</p>
+        <a href="#" class="btn-brand">Coming Soon</a>
+      </div>
 
-  <div class="projects">
+      <div class="brand-card">
+        <img src="assets/logos/Aquavra.png" alt="Aquavra Logo">
+        <h3>Aquavra</h3>
+        <p>Wellness brand dedicated to performance, lifestyle design, and performance-driven travel experiences.</p>
+        <a href="https://aquavra.com" target="_blank" class="btn-brand">Visit Website</a>
+      </div>
 
-    <div class="card">
-      <img src="assets/logos/Nexus.png" alt="Nexus Logo">
-      <h3>Nexus</h3>
-      <p>Central automation platform powering intelligent workflows across the Nexus ecosystem.</p>
-      <a href="#">Coming Soon</a>
+      <div class="brand-card">
+        <img src="assets/logos/WILDPATH.png" alt="WildPath Logo">
+        <h3>WildPath</h3>
+        <p>Travel discovery platform connecting global travellers with verified tour operators and local experiences.</p>
+        <a href="/wildpath/index.html" class="btn-brand">View Project</a>
+      </div>
+
     </div>
-
-    <div class="card">
-      <img src="assets/logos/PriceSmart%20Logo.png" alt="PriceSmart Logo">
-      <h3>PriceSmart</h3>
-      <p>Smart retail insights platform helping consumers save money through data-driven decisions.</p>
-      <a href="#">Coming Soon</a>
-    </div>
-
-    <div class="card">
-      <img src="assets/logos/Aquavra.png" alt="Aquavra Logo">
-      <h3>Aquavra</h3>
-      <p>Wellness and lifestyle brand focused on travel, performance, and aligned living.</p>
-      <a href="https://aquavra.com" target="_blank">Visit Site</a>
-    </div>
-
-    <div class="card">
-      <img src="assets/logos/WILDPATH.png" alt="WildPath Logo">
-      <h3>WildPath</h3>
-      <p>Travel discovery platform connecting travellers with verified South African operators.</p>
-      <a href="/wildpath/index.html">View Platform</a>
-    </div>
-
   </div>
 
-  <div class="contact">
-    <h3>Corporate Contact</h3>
-    <p><strong>Director:</strong> Corrie van Greune | <a href="mailto:corrie@vgcorp.co.za" style="color: var(--secondary); text-decoration: none;">corrie@vgcorp.co.za</a></p>
-    <p><strong>Accountant & Information Officer:</strong> Wally van Greune | <a href="mailto:wally@vgcorp.co.za" style="color: var(--secondary); text-decoration: none;">wally@vgcorp.co.za</a></p>
-    <p><strong>Registration No:</strong> 2025/519458/07</p>
+  <div class="container">
+    <div class="contact-banner">
+      <div class="contact-info">
+        <h2>Corporate Administration</h2>
+        <p>Inquiries regarding portfolio management, brand acquisitions, or information officer services.</p>
+      </div>
+      <div class="contact-details">
+        <div>
+          <strong>Director</strong>
+          Corrie van Greune | corrie@vgcorp.co.za
+        </div>
+        <div>
+          <strong>Information Officer</strong>
+          Wally van Greune | wally@vgcorp.co.za
+        </div>
+      </div>
+    </div>
   </div>
-
-</div>
+</main>
 
 <footer>
-  <p>© 2025 VG Corp (Pty) Ltd | Registered in South Africa</p>
-  <p style="opacity: 0.7; font-size: 11px; margin-top: 5px;">Merchant Domicile: Cape Twon, South Africa | All Rights Reserved</p>
+  <div class="footer-links">
+    <a href="/privacy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Service</a>
+    <a href="/refunds.html">Refund Policy</a>
+    <a href="/deletion.html">Account Deletion</a>
+  </div>
+  <p>© 2026 VG Corp (Pty) Ltd | Reg: 2025/519458/07</p>
+  <p class="legal-line">Merchant Domicile: Cape Town, South Africa</p>
 </footer>
 
 </body>
