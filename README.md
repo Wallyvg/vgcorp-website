@@ -88,7 +88,7 @@ Built with precision in South Africa.
 
 ---
 
-© 2025 VG Corp (Pty) Ltd  
+© 2026 VG Corp (Pty) Ltd  
 Built with precision in South Africa.
 ---
 
