@@ -1,101 +1,88 @@
-# VG Corp (Pty) Ltd
+# VG Corp (Pty) Ltd  
+### Strategic Digital Portfolio & Ecosystem Infrastructure
 
-VG Corp (Pty) Ltd is a South African holding company that owns and manages a portfolio of independent brands focused on simplifying everyday living.
+VG Corp (Pty) Ltd is a South African holding company focused on building and managing independent digital platforms that simplify, automate, and enhance everyday life.  
 
-Each brand operates autonomously with its own platform, customer base, and legal framework, while VG Corp provides strategic oversight, governance, and brand alignment.
-
----
-
-## 🏢 Company Information
-
-**Registered Name:** VG Corp (Pty) Ltd  
-**Registration Number:** 2025/519458/07  
-**Country of Domicile:** South Africa  
-
-VG Corp does not directly sell products or services.  
-All commercial activities are conducted through its individual brands.
+The company operates as a structured ecosystem where each brand functions independently while being supported by a centralized strategic and operational framework.
 
 ---
 
-## 🌍 Active Portfolio
+## 🚀 Active Brand Portfolio
 
-### PriceSmart  
-**Retail Data Aggregation Platform**
+### 🧠 Nexus  
+**Central Intelligence Layer**  
+Nexus serves as the operational backbone of the VG Corp ecosystem. It enables intelligent automation, workflow orchestration, and scalable execution across multiple digital platforms.
 
-A South African subscription-based application that aggregates retail pricing and promotional data to help consumers make more informed purchasing decisions.
-
-- Non-purchasing platform  
-- Data-driven insights  
-- Subscription-based model  
+🔗 https://vgcorp.co.za/nexus/
 
 ---
 
-### Zalvory  
-**Lifestyle & E-commerce Brand**
+### 🛒 PriceSmart  
+**Retail Intelligence Platform**  
+PriceSmart aggregates retail pricing data across South Africa, enabling consumers to make informed purchasing decisions, track spending, and optimize grocery planning through real-time insights.
 
-An independent online retail brand operating on its own platform, offering curated lifestyle and consumer products.
-
-- Operates independently  
-- Own Terms & Conditions and payment systems  
-- External website  
+🔗 https://vgcorp.co.za/pricesmart/
 
 ---
 
-### Aquavra  
-**Wellness & Lifestyle Brand**
+### 🌿 Aquavra  
+**Wellness & Lifestyle Ecosystem**  
+Aquavra focuses on performance, mobility, and lifestyle alignment through digital wellness products, structured routines, and travel-based experiences.
 
-A wellness-focused brand offering hydration, travel, and performance-based lifestyle products and digital resources.
-
-- Independent platform  
-- Separate legal and commercial structure  
+🔗 https://www.aquavra.com
 
 ---
 
-### WildPath  
-**Travel Discovery Platform (In Development)**
+### 🐘 WildPath  
+**Premium Travel Discovery Platform**  
+WildPath connects travellers with verified South African operators, offering a structured, safe, and real-time travel experience with integrated communication and coordination tools.
 
-A South African travel application connecting travellers with verified local operators across all nine provinces.
-
-- Platform-based model (not a tour operator)  
-- PayFast payment integration (10% / 90% split)  
-- Safety-focused features including SOS and operator verification  
+🔗 https://vgcorp.co.za/wildpath/
 
 ---
 
-## 📁 Repository Purpose
+## 🛠 Technology & Infrastructure
 
-This repository hosts the **VG Corp holding company website**, which:
-
-- Presents the portfolio of brands
-- Provides high-level brand information
-- Links to external platforms and applications
-- Supports SEO and digital presence
-
-This repository does **not** include:
-
-- Payment systems  
-- E-commerce functionality  
-- Mobile app source code  
-- Brand-specific legal agreements  
+- **Architecture:** Static Web (GitHub Pages), Flutter (Mobile), Firebase (Backend)  
+- **Development Environment:** VS Code  
+- **Version Control:** GitHub Managed  
+- **Scalability Model:** Modular Platform Architecture  
 
 ---
 
-## ⚠️ Important Notes
+## 🔐 Compliance & Security
 
-- Each brand operates independently and maintains its own legal documentation.
-- VG Corp does not act as a retailer, travel agent, or service provider.
-- External platforms are linked for convenience and operate under their own terms.
+- Fully compliant with the **Protection of Personal Information Act (POPIA)**  
+- Aligned with the **Consumer Protection Act (CPA)** of South Africa  
+- Payment processing via **PCI-DSS compliant secure gateways**  
+- All transactions conducted in **South African Rand (ZAR)**  
+- **Merchant Domicile:** Cape Town, South Africa  
 
 ---
 
-## 📬 Contact
+## 📬 Corporate Contact & Administration
 
-For corporate or administrative enquiries:
+- **Director:** Corrie van Greune  
+- **Information Officer & Accountant:** Wally van Greune  
 
-**Accountant:** Wally van Greune  
-**Email:** wally@vgcorp.co.za  
-**Mobile:** +27 82 876 4974  
+- **Email (Corporate):** corrie@vgcorp.co.za  
+- **Email (Compliance):** wally@vgcorp.co.za  
 
+- **Registered Entity:** VG Corp (Pty) Ltd  
+- **Registration Number:** 2025/519458/07  
+
+- **Official Website:** https://www.vgcorp.co.za  
+
+---
+
+## 🧭 Positioning Statement
+
+> A structured ecosystem of independent platforms designed to simplify, automate, and elevate everyday life.
+
+---
+
+© 2025 VG Corp (Pty) Ltd  
+Built with precision in South Africa.
 ---
 
 © VG Corp (Pty) Ltd. Registered in South Africa.
