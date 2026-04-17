@@ -94,5 +94,3 @@ VG Corp (Pty) Ltd operates in full compliance with South African regulations and
 © 2026 VG Corp (Pty) Ltd  
 *Built with precision in Cape Town, South Africa.*
 
-© 2026 VG Corp (Pty) Ltd  
-*Built with precision in Cape Town, South Africa.*
