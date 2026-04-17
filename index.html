@@ -5,7 +5,7 @@
   <title>VG Corp (Pty) Ltd | Holding Company</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing independent brands including PriceSmart, Zalvory, Aquavra, and WildPath.">
+  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing independent brands including Nexus, PriceSmart, Aquavra, and WildPath.">
 
   <style>
     :root {
@@ -23,6 +23,7 @@
       font-family: Arial, sans-serif;
       background: #ffffff;
       color: var(--text);
+      line-height: 1.6;
     }
 
     header {
@@ -43,6 +44,7 @@
       font-weight: bold;
       font-size: 20px;
       color: var(--primary);
+      text-decoration: none;
     }
 
     .nav-links a {
@@ -61,71 +63,87 @@
     h1 {
       color: var(--primary);
       font-size: 36px;
+      margin-bottom: 20px;
     }
 
     h2 {
       margin-top: 50px;
       color: var(--primary);
+      border-bottom: 2px solid var(--border);
+      display: inline-block;
+      padding-bottom: 5px;
     }
 
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
+      gap: 25px;
       margin-top: 30px;
     }
 
     .card {
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 20px;
+      padding: 25px;
       background: #ffffff;
       text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     }
 
     .card img {
-      max-width: 150px;
-      height: 80px;
+      max-width: 140px;
+      height: 90px;
       object-fit: contain;
       margin: 0 auto 15px auto;
     }
 
     .card h3 {
       margin-top: 10px;
-      color: var(--secondary);
+      color: var(--primary);
+      font-size: 20px;
     }
 
     .card p {
       font-size: 14px;
       color: #4b5563;
       flex-grow: 1;
+      margin-bottom: 20px;
     }
 
     .card a {
       display: inline-block;
-      margin-top: 15px;
-      color: var(--highlight);
+      padding: 10px 15px;
+      color: var(--secondary);
       text-decoration: none;
       font-weight: bold;
+      border: 1px solid var(--secondary);
+      border-radius: 6px;
+      transition: all 0.2s;
     }
 
     .card a:hover {
-      text-decoration: underline;
+      background: var(--secondary);
+      color: #fff;
     }
 
     .contact {
-      margin-top: 50px;
-      padding: 20px;
+      margin-top: 60px;
+      padding: 30px;
       background: #f8fafc;
       border-left: 5px solid var(--accent);
+      border-radius: 0 12px 12px 0;
     }
 
     footer {
-      margin-top: 80px;
-      padding: 30px;
+      margin-top: 100px;
+      padding: 40px;
       text-align: center;
       font-size: 13px;
       color: var(--neutral);
@@ -138,7 +156,7 @@
 
 <header>
   <div class="nav">
-    <div class="logo">VG CORP</div>
+    <a href="/index.html" class="logo">VG CORP</a>
 
     <div class="nav-links">
       <a href="/index.html">Home</a>
@@ -154,10 +172,10 @@
 
   <h1>VG Corp (Pty) Ltd</h1>
 
-  <p>
+  <p style="font-size: 18px; color: #4b5563; max-width: 800px;">
     VG Corp (Pty) Ltd is a South African holding company that owns and manages 
-    independent brands focused on simplifying everyday life. Each brand operates 
-    independently with its own platform, systems, and legal framework.
+    independent brands focused on simplifying everyday life through intelligent 
+    automation, retail intelligence, and wellness-driven digital products.
   </p>
 
   <h2>Our Brands</h2>
@@ -165,50 +183,47 @@
   <div class="projects">
 
     <div class="card">
-      <img src="assets/logos/PriceSmart%20Logo.png" alt="PriceSmart Logo">
-      <h3>PriceSmart</h3>
-      <p>Subscription-based retail data aggregation platform for smarter shopping decisions.</p>
-      <a href="#">Coming Soon</a>
+      <img src="assets/logos/Nexus.png" alt="Nexus Logo">
+      <h3>Nexus</h3>
+      <p>Central automation platform powering intelligent workflows across the Nexus ecosystem.</p>
+      <a href="#">System Online</a>
     </div>
 
     <div class="card">
-      <img src="assets/logos/Gold%20Zalvory.jpg" alt="Zalvory Logo">
-      <h3>Zalvory</h3>
-      <p>Independent e-commerce platform with its own custom systems and luxury structure.</p>
-      <a href="https://zalvory.co.za" target="_blank">Visit Website</a>
+      <img src="assets/logos/PriceSmart%20Logo.png" alt="PriceSmart Logo">
+      <h3>PriceSmart</h3>
+      <p>Smart retail insights platform helping consumers save money through data-driven decisions.</p>
+      <a href="#">Coming Soon</a>
     </div>
 
     <div class="card">
       <img src="assets/logos/Aquavra.png" alt="Aquavra Logo">
       <h3>Aquavra</h3>
-      <p>Wellness and lifestyle brand focused on performance, hydration, and travel.</p>
-      <a href="https://aquavra.com" target="_blank">Visit Website</a>
+      <p>Wellness and lifestyle brand focused on travel, performance, and aligned living.</p>
+      <a href="https://aquavra.com" target="_blank">Visit Site</a>
     </div>
 
     <div class="card">
-      <img src="assets/logos/VG%20Corp%20Logo.png" alt="WildPath Logo">
+      <img src="assets/logos/WILDPATH.png" alt="WildPath Logo">
       <h3>WildPath</h3>
       <p>Travel discovery platform connecting travellers with verified South African operators.</p>
-      <a href="/wildpath/index.html">View Project</a>
+      <a href="/wildpath/index.html">View Platform</a>
     </div>
 
   </div>
 
   <div class="contact">
-    <h2>Contact</h2>
-
-    <p><strong>Director:</strong> Corrie van Greune</p>
-    <p><strong>Email:</strong> corrie@vgcorp.co.za</p>
-
-    <p><strong>Accountant & Information Officer:</strong> Wally van Greune</p>
-    <p><strong>Email:</strong> wally@vgcorp.co.za</p>
+    <h3>Corporate Contact</h3>
+    <p><strong>Director:</strong> Corrie van Greune | <a href="mailto:corrie@vgcorp.co.za" style="color: var(--secondary); text-decoration: none;">corrie@vgcorp.co.za</a></p>
+    <p><strong>Accountant & Information Officer:</strong> Wally van Greune | <a href="mailto:wally@vgcorp.co.za" style="color: var(--secondary); text-decoration: none;">wally@vgcorp.co.za</a></p>
+    <p><strong>Registration No:</strong> 2025/519458/07</p>
   </div>
 
 </div>
 
 <footer>
-  <p>© 2025 VG Corp (Pty) Ltd | Registration No: 2025/519458/07 | Cape Town, South Africa</p>
-  <p style="opacity: 0.7; font-size: 11px; margin-top: 5px;">Merchant Domicile: Cape Town, South Africa</p>
+  <p>© 2025 VG Corp (Pty) Ltd | Registered in South Africa</p>
+  <p style="opacity: 0.7; font-size: 11px; margin-top: 5px;">Merchant Domicile: Cape Twon, South Africa | All Rights Reserved</p>
 </footer>
 
 </body>
