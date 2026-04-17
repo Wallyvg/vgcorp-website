@@ -5,7 +5,7 @@
   <title>VG Corp (Pty) Ltd | Holding Company</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing independent brands including Nexus, PriceSmart, Aquavra, and WildPath.">
+  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing independent brands including PriceSmart, Zalvory, Aquavra, and WildPath.">
 
   <style>
     :root {
@@ -81,12 +81,16 @@
       padding: 20px;
       background: #ffffff;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .card img {
-      max-width: 120px;
-      height: auto;
-      margin-bottom: 10px;
+      max-width: 150px;
+      height: 80px;
+      object-fit: contain;
+      margin: 0 auto 15px auto;
     }
 
     .card h3 {
@@ -97,11 +101,12 @@
     .card p {
       font-size: 14px;
       color: #4b5563;
+      flex-grow: 1;
     }
 
     .card a {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 15px;
       color: var(--highlight);
       text-decoration: none;
       font-weight: bold;
@@ -136,10 +141,11 @@
     <div class="logo">VG CORP</div>
 
     <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-      <a href="contact.html">Contact</a>
+      <a href="/index.html">Home</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/refunds.html">Refunds</a>
+      <a href="/contact.html">Contact</a>
     </div>
   </div>
 </header>
@@ -158,36 +164,32 @@
 
   <div class="projects">
 
-    <!-- NEXUS -->
     <div class="card">
-      <img src="assets/logos/VG Corp Logo.png" alt="Nexus Logo">
-      <h3>Nexus</h3>
-      <p>Central automation and intelligence platform within the VG Corp ecosystem.</p>
-      <a href="#">Coming Soon</a>
-    </div>
-
-    <!-- PRICESMART -->
-    <div class="card">
-      <img src="assets/logos/PriceSmart Logo.png" alt="PriceSmart Logo">
+      <img src="assets/logos/PriceSmart%20Logo.png" alt="PriceSmart Logo">
       <h3>PriceSmart</h3>
-      <p>Subscription-based retail data aggregation platform.</p>
+      <p>Subscription-based retail data aggregation platform for smarter shopping decisions.</p>
       <a href="#">Coming Soon</a>
     </div>
 
-    <!-- AQUAVRA -->
+    <div class="card">
+      <img src="assets/logos/Gold%20Zalvory.jpg" alt="Zalvory Logo">
+      <h3>Zalvory</h3>
+      <p>Independent e-commerce platform with its own custom systems and luxury structure.</p>
+      <a href="https://zalvory.co.za" target="_blank">Visit Website</a>
+    </div>
+
     <div class="card">
       <img src="assets/logos/Aquavra.png" alt="Aquavra Logo">
       <h3>Aquavra</h3>
-      <p>Wellness and lifestyle brand focused on performance and travel.</p>
+      <p>Wellness and lifestyle brand focused on performance, hydration, and travel.</p>
       <a href="https://aquavra.com" target="_blank">Visit Website</a>
     </div>
 
-    <!-- WILDPATH -->
     <div class="card">
-      <img src="assets/logos/VG Corp Logo.png" alt="WildPath Logo">
+      <img src="assets/logos/VG%20Corp%20Logo.png" alt="WildPath Logo">
       <h3>WildPath</h3>
-      <p>Travel discovery platform connecting travellers with operators.</p>
-      <a href="wildpath/index.html">View Project</a>
+      <p>Travel discovery platform connecting travellers with verified South African operators.</p>
+      <a href="/wildpath/index.html">View Project</a>
     </div>
 
   </div>
@@ -196,7 +198,7 @@
     <h2>Contact</h2>
 
     <p><strong>Director:</strong> Corrie van Greune</p>
-    <p><strong>Email:</strong> corrie@mweb.co.za</p>
+    <p><strong>Email:</strong> corrie@vgcorp.co.za</p>
 
     <p><strong>Accountant & Information Officer:</strong> Wally van Greune</p>
     <p><strong>Email:</strong> wally@vgcorp.co.za</p>
@@ -205,7 +207,8 @@
 </div>
 
 <footer>
-  <p>© 2026 VG Corp (Pty) Ltd | Registration No: 2025/519458/07 | South Africa</p>
+  <p>© 2025 VG Corp (Pty) Ltd | Registration No: 2025/519458/07 | Cape Town, South Africa</p>
+  <p style="opacity: 0.7; font-size: 11px; margin-top: 5px;">Merchant Domicile: Cape Town, South Africa</p>
 </footer>
 
 </body>
