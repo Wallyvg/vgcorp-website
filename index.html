@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>VG Corp (Pty) Ltd | Digital Ecosystem Holding Company South Africa</title>
+  <title>VG Corp (Pty) Ltd | Digital Ecosystem South Africa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing digital platforms including PriceSmart, Aquavra, and WildPath.">
+  <!-- SEO -->
+  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing PriceSmart, Aquavra, and WildPath. Digital platforms built for automation, retail intelligence, and travel.">
+  <link rel="canonical" href="https://www.vgcorp.co.za/">
 
   <style>
     :root {
       --primary: #17183a;
-      --secondary: #265282;
-      --accent: #3795aa;
-      --highlight: #24c9bd;
+      --accent: #24c9bd;
       --glass: rgba(255,255,255,0.85);
       --border: rgba(229,231,235,0.5);
       --text: #1f2933;
@@ -21,14 +21,13 @@
 
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
+      font-family: Arial, sans-serif;
       background: linear-gradient(135deg,#f0f4f8,#e2e8f0);
     }
 
     header {
       background: var(--glass);
-      backdrop-filter: blur(12px);
-      padding: 20px;
+      padding: 18px;
       border-bottom: 1px solid var(--border);
     }
 
@@ -37,6 +36,7 @@
       margin: auto;
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
     .nav a {
@@ -44,15 +44,16 @@
       color: var(--primary);
       margin-left: 15px;
       font-weight: 600;
+      font-size: 14px;
     }
 
     .hero {
       text-align: center;
-      padding: 120px 20px 80px;
+      padding: 110px 20px 70px;
     }
 
     .hero h1 {
-      font-size: 48px;
+      font-size: 44px;
       color: var(--primary);
     }
 
@@ -65,85 +66,55 @@
     .container {
       max-width: 1200px;
       margin: auto;
-      padding: 0 20px 100px;
+      padding: 0 20px 80px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
       gap: 30px;
     }
 
     .card {
       background: var(--glass);
-      border-radius: 26px;
-      padding: 40px 30px;
+      border-radius: 20px;
+      padding: 35px;
       text-align: center;
       border: 1px solid var(--border);
-      transition: all 0.35s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* Glow effect */
-    .card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at top, rgba(36,201,189,0.15), transparent 60%);
-      opacity: 0;
-      transition: 0.4s;
-    }
-
-    .card:hover::before {
-      opacity: 1;
+      transition: 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-10px) scale(1.02);
-      box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
     }
 
-    /* LOGO FIX */
     .logo-box {
       height: 90px;
       display: flex;
-      align-items: center;
       justify-content: center;
-      margin-bottom: 25px;
+      align-items: center;
+      margin-bottom: 20px;
     }
 
     .logo-box img {
       max-height: 70px;
       max-width: 180px;
       object-fit: contain;
-      transition: transform 0.3s ease;
     }
 
-    .card:hover img {
-      transform: scale(1.08);
-    }
-
-    h3 {
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 25px;
-    }
+    h3 { color: var(--primary); }
+    p { color: var(--muted); font-size: 14px; }
 
     .btn {
       display: inline-block;
+      margin-top: 10px;
       padding: 12px 18px;
       border-radius: 10px;
       background: #f1f5f9;
-      color: var(--secondary);
+      color: var(--primary);
       text-decoration: none;
-      font-weight: 700;
-      transition: 0.3s;
+      font-weight: bold;
     }
 
     .card:hover .btn {
@@ -153,9 +124,15 @@
 
     footer {
       text-align: center;
-      padding: 60px 20px;
-      font-size: 12px;
+      padding: 50px 20px;
+      font-size: 13px;
       color: #6b7280;
+    }
+
+    footer a {
+      color: #6b7280;
+      text-decoration: none;
+      margin: 0 8px;
     }
 
   </style>
@@ -167,67 +144,73 @@
   <div class="nav">
     <strong>VG CORP</strong>
     <div>
-      <a href="./privacy.html">Privacy</a>
-      <a href="./terms.html">Terms</a>
-      <a href="./refunds.html">Refunds</a>
-      <a href="./contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="refunds.html">Refunds</a>
+      <a href="deletion.html">Deletion</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 </header>
 
 <section class="hero">
   <h1>Digital Ecosystem</h1>
-  <p>Building structured platforms that simplify, automate, and elevate everyday life.</p>
+  <p>Structured platforms that simplify, automate, and elevate everyday life.</p>
 </section>
 
 <div class="container">
   <div class="grid">
 
-    <!-- NEXUS -->
     <div class="card">
       <div class="logo-box">
-        <img src="assets/logos/Nexus.png" alt="Nexus Logo">
+        <img src="assets/logos/Nexus.png" onerror="this.style.display='none'">
       </div>
       <h3>Nexus</h3>
       <p>Automation and intelligence layer powering the ecosystem.</p>
       <span class="btn">Coming Soon</span>
     </div>
 
-    <!-- PRICESMART -->
     <div class="card">
       <div class="logo-box">
-        <img src="assets/logos/PriceSmart%20Logo.png" alt="PriceSmart Logo">
+        <img src="assets/logos/PriceSmart Logo.png">
       </div>
       <h3>PriceSmart</h3>
-      <p>Smart retail insights to help consumers save money.</p>
-      <a href="./pricesmart/" class="btn">View Project</a>
+      <p>Retail insights platform helping consumers save.</p>
+      <a href="pricesmart/" class="btn">View Project</a>
     </div>
 
-    <!-- AQUAVRA -->
     <div class="card">
       <div class="logo-box">
-        <img src="assets/logos/Aquavra.png" alt="Aquavra Logo">
+        <img src="assets/logos/Aquavra.png">
       </div>
       <h3>Aquavra</h3>
-      <p>Wellness, performance, and aligned living.</p>
-      <a href="https://www.aquavra.com" class="btn">Visit Website</a>
+      <p>Wellness and performance lifestyle ecosystem.</p>
+      <a href="https://www.aquavra.com" class="btn">Visit</a>
     </div>
 
-    <!-- WILDPATH -->
     <div class="card">
       <div class="logo-box">
-        <img src="assets/logos/WILDPATH.png" alt="WildPath Logo">
+        <!-- IMPORTANT FIX -->
+        <img src="assets/logos/WILDPATH.png">
       </div>
       <h3>WildPath</h3>
       <p>Travel discovery platform connecting travellers with operators.</p>
-      <a href="./wildpath/" class="btn">View Project</a>
+      <a href="wildpath/" class="btn">View Project</a>
     </div>
 
   </div>
 </div>
 
 <footer>
-  © 2026 VG Corp (Pty) Ltd | South Africa
+  <p>© 2026 VG Corp (Pty) Ltd | Reg: 2025/519458/07</p>
+  <p>South Africa | Merchant Domicile: Cape Town</p>
+  <p>
+    <a href="privacy.html">Privacy</a> |
+    <a href="terms.html">Terms</a> |
+    <a href="refunds.html">Refunds</a> |
+    <a href="deletion.html">Deletion</a> |
+    <a href="contact.html">Contact</a>
+  </p>
 </footer>
 
 </body>
