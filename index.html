@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>VG Corp (Pty) Ltd | Strategic Digital Portfolio</title>
+  <title>VG Corp (Pty) Ltd | Digital Ecosystem Holding Company South Africa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing a portfolio of independent digital brands including Nexus, PriceSmart, Aquavra, and WildPath.">
+
+  <!-- SEO -->
+  <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing digital platforms including PriceSmart, Aquavra, and WildPath. Simplifying everyday life through structured digital ecosystems.">
+  <meta name="keywords" content="VG Corp, South Africa, PriceSmart, WildPath, Aquavra, digital platforms, travel app, retail data">
+  <meta name="author" content="VG Corp (Pty) Ltd">
+  <link rel="canonical" href="https://www.vgcorp.co.za/">
+
+  <!-- Open Graph (Google + Social) -->
+  <meta property="og:title" content="VG Corp (Pty) Ltd">
+  <meta property="og:description" content="A South African holding company managing digital ecosystems and platforms.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.vgcorp.co.za/">
 
   <style>
     :root {
@@ -64,7 +75,6 @@
       font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      transition: color 0.2s;
     }
 
     .nav-links a:hover { color: var(--accent); }
@@ -78,8 +88,6 @@
       font-size: clamp(2.5rem, 6vw, 4.5rem);
       color: var(--primary);
       margin-bottom: 20px;
-      letter-spacing: -2px;
-      line-height: 1.1;
     }
 
     .hero p {
@@ -110,14 +118,6 @@
       text-align: center;
       display: flex;
       flex-direction: column;
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-    }
-
-    .brand-card:hover {
-      transform: translateY(-12px);
-      box-shadow: 0 25px 50px rgba(23, 24, 58, 0.1);
-      border-color: var(--highlight);
     }
 
     .brand-card img {
@@ -126,25 +126,22 @@
       object-fit: contain;
     }
 
-    .brand-card h3 { font-size: 1.6rem; color: var(--primary); margin: 0 0 15px; }
-    .brand-card p { font-size: 1rem; color: var(--text-muted); margin-bottom: 30px; flex-grow: 1; }
+    .brand-card h3 { color: var(--primary); }
+    .brand-card p { color: var(--text-muted); }
 
     .btn-brand {
       padding: 14px;
       border-radius: 12px;
       text-decoration: none;
       font-weight: 700;
-      font-size: 0.9rem;
       background: #f1f5f9;
       color: var(--secondary);
       border: 1px solid var(--border);
-      transition: all 0.3s;
     }
 
-    .brand-card:hover .btn-brand {
+    .btn-brand:hover {
       background: var(--primary);
       color: white;
-      border-color: var(--primary);
     }
 
     .contact-card {
@@ -155,20 +152,9 @@
       margin-top: 40px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
       flex-wrap: wrap;
       gap: 30px;
     }
-
-    .contact-info h2 { font-size: 2.2rem; margin: 0 0 10px; }
-    .contact-links div { 
-      background: rgba(255,255,255,0.1); 
-      padding: 15px 25px; 
-      border-radius: 15px; 
-      border: 1px solid rgba(255,255,255,0.2); 
-      font-weight: 600; 
-    }
-    .contact-links strong { display: block; font-size: 0.7rem; text-transform: uppercase; opacity: 0.6; margin-bottom: 4px; }
 
     footer {
       text-align: center;
@@ -176,83 +162,85 @@
       font-size: 0.8rem;
       color: var(--text-muted);
     }
-
-    @media (max-width: 768px) {
-      .contact-card { padding: 40px; text-align: center; justify-content: center; }
-      .nav-links { display: none; } 
-    }
   </style>
 </head>
+
 <body>
 
 <header>
   <div class="nav-container">
-    <a href="/index.html" class="brand-logo">VG CORP</a>
+    <a href="./index.html" class="brand-logo">VG CORP</a>
     <nav class="nav-links">
-      <a href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
-      <a href="/refunds.html">Refunds</a>
-      <a href="/deletion.html">Deletion</a>
-      <a href="/contact.html">Contact</a>
+      <a href="./privacy.html">Privacy</a>
+      <a href="./terms.html">Terms</a>
+      <a href="./refunds.html">Refunds</a>
+      <a href="./deletion.html">Deletion</a>
+      <a href="./contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <section class="hero">
-    <h1>Strategic Holding & Digital Innovation</h1>
-    <p>Managing a diversified portfolio of South African brands across automation, retail intelligence, and wellness.</p>
-  </section>
 
-  <div class="container">
-    <div class="brand-grid">
+<section class="hero">
+  <h1>Strategic Holding & Digital Innovation</h1>
+  <p>Managing a diversified portfolio of South African platforms across automation, retail intelligence, and travel.</p>
+</section>
 
-      <div class="brand-card">
-        <img src="assets/logos/Nexus.png" alt="Nexus Logo">
-        <h3>Nexus</h3>
-        <p>Central automation platform powering intelligent workflows across the ecosystem.</p>
-        <a href="#" class="btn-brand">Coming Soon</a>
-      </div>
+<div class="container">
+  <div class="brand-grid">
 
-      <div class="brand-card">
-        <img src="assets/logos/PriceSmart%20Logo.png" alt="PriceSmart Logo">
-        <h3>PriceSmart</h3>
-        <p>Smart retail insights platform helping consumers save through data-driven price aggregation.</p>
-        <a href="/pricesmart/" class="btn-brand">Coming Soon</a>
-      </div> 
-
-      <div class="brand-card">
-        <img src="assets/logos/Aquavra.png" alt="Aquavra Logo">
-        <h3>Aquavra</h3>
-        <p>Wellness brand dedicated to performance, lifestyle design, and premium travel.</p>
-        <a href="https://aquavra.com" target="_blank" class="btn-brand">Visit Site</a>
-      </div>
-
-      <div class="brand-card">
-        <img src="assets/logos/WILDPATH.png" alt="WildPath Logo">
-        <h3>WildPath</h3>
-        <p>Travel discovery platform connecting travellers with verified tour operators.</p>
-        <a href="/wildpath/" class="btn-brand">View Project</a>
-      </div>
-
+    <!-- NEXUS -->
+    <div class="brand-card">
+      <img src="assets/logos/Nexus.png" alt="Nexus automation platform logo">
+      <h3>Nexus</h3>
+      <p>Central automation and intelligence platform powering workflows across the VG Corp ecosystem.</p>
+      <span class="btn-brand">Coming Soon</span>
     </div>
 
-    <div class="contact-card">
-      <div class="contact-info">
-        <h2>Corporate Hub</h2>
-        <p>Direct inquiries to our portfolio administration team.</p>
-      </div>
-      <div class="contact-links">
-        <div><strong>Director</strong>Corrie van Greune | corrie@vgcorp.co.za</div>
-        <div><strong>Accountant & IO</strong>Wally van Greune | wally@vgcorp.co.za</div>
-      </div>
+    <!-- PRICESMART -->
+    <div class="brand-card">
+      <img src="assets/logos/PriceSmart Logo.png" alt="PriceSmart retail intelligence logo">
+      <h3>PriceSmart</h3>
+      <p>Retail intelligence platform helping consumers save money through real-time pricing insights.</p>
+      <a href="./pricesmart/" class="btn-brand">View Project</a>
+    </div>
+
+    <!-- AQUAVRA -->
+    <div class="brand-card">
+      <img src="assets/logos/Aquavra.png" alt="Aquavra wellness brand logo">
+      <h3>Aquavra</h3>
+      <p>Wellness and lifestyle ecosystem focused on performance, mobility, and aligned living.</p>
+      <a href="https://www.aquavra.com" target="_blank" class="btn-brand">Visit Website</a>
+    </div>
+
+    <!-- WILDPATH -->
+    <div class="brand-card">
+      <img src="assets/logos/WildPath.png" alt="WildPath travel platform logo">
+      <h3>WildPath</h3>
+      <p>Travel discovery platform connecting travellers with verified South African operators.</p>
+      <a href="./wildpath/" class="btn-brand">View Project</a>
+    </div>
+
+  </div>
+
+  <div class="contact-card">
+    <div>
+      <h2>Corporate Hub</h2>
+      <p>Direct inquiries to VG Corp administration.</p>
+    </div>
+    <div>
+      <p><strong>Director:</strong> corrie@vgcorp.co.za</p>
+      <p><strong>Information Officer:</strong> wally@vgcorp.co.za</p>
     </div>
   </div>
+</div>
+
 </main>
 
 <footer>
-  <p><strong>© 2026 VG Corp (Pty) Ltd</strong> | Registration: 2025/519458/07</p>
-  <p style="opacity: 0.6;">Merchant Domicile: Cape Town, South Africa</p>
+  <p><strong>© 2026 VG Corp (Pty) Ltd</strong> | Reg: 2025/519458/07</p>
+  <p>South Africa | Merchant Domicile: Cape Town</p>
 </footer>
 
 </body>
