@@ -11,12 +11,6 @@
   <meta name="author" content="VG Corp (Pty) Ltd">
   <link rel="canonical" href="https://www.vgcorp.co.za/">
 
-  <!-- Open Graph (Google + Social) -->
-  <meta property="og:title" content="VG Corp (Pty) Ltd">
-  <meta property="og:description" content="A South African holding company managing digital ecosystems and platforms.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.vgcorp.co.za/">
-
   <style>
     :root {
       --primary: #17183a;
@@ -64,7 +58,6 @@
       font-size: 1.4rem;
       color: var(--primary);
       text-decoration: none;
-      letter-spacing: -0.5px;
     }
 
     .nav-links a {
@@ -74,7 +67,6 @@
       font-weight: 600;
       font-size: 0.85rem;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
     }
 
     .nav-links a:hover { color: var(--accent); }
@@ -111,7 +103,6 @@
 
     .brand-card {
       background: var(--glass);
-      backdrop-filter: blur(8px);
       border: 1px solid var(--border);
       border-radius: 24px;
       padding: 40px 30px;
@@ -121,9 +112,13 @@
     }
 
     .brand-card img {
-      height: 80px;
-      margin-bottom: 25px;
+      max-width: 160px;
+      max-height: 80px;
+      width: auto;
+      height: auto;
+      margin: 0 auto 25px;
       object-fit: contain;
+      display: block;
     }
 
     .brand-card h3 { color: var(--primary); }
@@ -150,10 +145,6 @@
       border-radius: 32px;
       padding: 60px;
       margin-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 30px;
     }
 
     footer {
@@ -192,7 +183,7 @@
 
     <!-- NEXUS -->
     <div class="brand-card">
-      <img src="assets/logos/Nexus.png" alt="Nexus automation platform logo">
+      <img src="assets/logos/Nexus.png" alt="Nexus Logo">
       <h3>Nexus</h3>
       <p>Central automation and intelligence platform powering workflows across the VG Corp ecosystem.</p>
       <span class="btn-brand">Coming Soon</span>
@@ -200,7 +191,7 @@
 
     <!-- PRICESMART -->
     <div class="brand-card">
-      <img src="assets/logos/PriceSmart Logo.png" alt="PriceSmart retail intelligence logo">
+      <img src="assets/logos/PriceSmart%20Logo.png" alt="PriceSmart Logo">
       <h3>PriceSmart</h3>
       <p>Retail intelligence platform helping consumers save money through real-time pricing insights.</p>
       <a href="./pricesmart/" class="btn-brand">View Project</a>
@@ -208,7 +199,7 @@
 
     <!-- AQUAVRA -->
     <div class="brand-card">
-      <img src="assets/logos/Aquavra.png" alt="Aquavra wellness brand logo">
+      <img src="assets/logos/Aquavra.png" alt="Aquavra Logo">
       <h3>Aquavra</h3>
       <p>Wellness and lifestyle ecosystem focused on performance, mobility, and aligned living.</p>
       <a href="https://www.aquavra.com" target="_blank" class="btn-brand">Visit Website</a>
@@ -216,7 +207,7 @@
 
     <!-- WILDPATH -->
     <div class="brand-card">
-      <img src="assets/logos/WildPath.png" alt="WildPath travel platform logo">
+      <img src="assets/logos/WILDPATH.png" alt="WildPath Logo">
       <h3>WildPath</h3>
       <p>Travel discovery platform connecting travellers with verified South African operators.</p>
       <a href="./wildpath/" class="btn-brand">View Project</a>
@@ -225,21 +216,16 @@
   </div>
 
   <div class="contact-card">
-    <div>
-      <h2>Corporate Hub</h2>
-      <p>Direct inquiries to VG Corp administration.</p>
-    </div>
-    <div>
-      <p><strong>Director:</strong> corrie@vgcorp.co.za</p>
-      <p><strong>Information Officer:</strong> wally@vgcorp.co.za</p>
-    </div>
+    <h2>Corporate Hub</h2>
+    <p>Director: corrie@vgcorp.co.za</p>
+    <p>Information Officer: wally@vgcorp.co.za</p>
   </div>
 </div>
 
 </main>
 
 <footer>
-  <p><strong>© 2026 VG Corp (Pty) Ltd</strong> | Reg: 2025/519458/07</p>
+  <p><strong>© 2026 VG Corp (Pty) Ltd</strong></p>
   <p>South Africa | Merchant Domicile: Cape Town</p>
 </footer>
 
