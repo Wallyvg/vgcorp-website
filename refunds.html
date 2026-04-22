@@ -7,9 +7,7 @@
   <style>
     :root {
       --primary: #17183a;
-      --secondary: #265282;
-      --accent: #3795aa;
-      --highlight: #24c9bd;
+      --accent: #24c9bd;
       --text: #1f2933;
       --border: #e5e7eb;
     }
@@ -26,87 +24,142 @@
       padding: 16px 20px;
       position: sticky;
       top: 0;
-      z-index: 1000;
-    }
-    .nav-container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .nav-logo {
-      font-weight: 800;
-      color: var(--primary);
-      text-decoration: none;
-      font-size: 18px;
     }
     .content {
       max-width: 800px;
       margin: 60px auto;
       padding: 0 20px;
     }
-    h1 { color: var(--primary); font-size: 32px; margin-bottom: 10px; }
-    h2 { color: var(--primary); font-size: 20px; margin-top: 30px; border-bottom: 1px solid var(--border); padding-bottom: 5px; }
+    h1 { color: var(--primary); }
+    h2 { margin-top: 30px; border-bottom: 1px solid var(--border); padding-bottom: 5px; }
+    .note {
+      background: #f8fafc;
+      border-left: 4px solid var(--accent);
+      padding: 15px;
+      margin-top: 15px;
+      font-size: 14px;
+    }
     .back-link {
       display: inline-block;
       margin-bottom: 20px;
-      color: var(--highlight);
+      color: var(--accent);
       text-decoration: none;
       font-weight: 600;
     }
     footer {
       background: var(--primary);
       color: white;
-      padding: 40px 20px;
+      padding: 40px;
       text-align: center;
-      font-size: 13px;
       margin-top: 80px;
+      font-size: 13px;
     }
   </style>
 </head>
 <body>
 
 <nav>
-  <div class="nav-container">
-    <a href="/index.html" class="nav-logo">VG CORP</a>
-  </div>
+  <a href="/index.html"><strong>VG CORP</strong></a>
 </nav>
 
 <div class="content">
   <a href="/index.html" class="back-link">← Back to Home</a>
+
   <h1>Refund & Cancellation Policy</h1>
-  <p>Last Updated: April 2026</p>
+  <p><strong>Last Updated: April 2026</strong></p>
 
+  <!-- BUSINESS MODEL -->
   <section>
-    <h2>1. Overview</h2>
-    <p>VG Corp (Pty) Ltd manages various brands with different fulfillment models. This policy outlines the general standards for refunds and cancellations across our ecosystem.</p>
-  </section>
-
-  <section>
-    <h2>2. Digital Subscriptions (e.g., PriceSmart)</h2>
-    <p>Subscribers may cancel their service at any time via their account dashboard. Cancellations will take effect at the end of the current billing cycle. Because our data products are digital and instantly accessible, we generally do not offer pro-rated refunds for partial months of service.</p>
-  </section>
-
-  <section>
-    <h2>3. Physical Products (e.g., Aquavra)</h2>
-    <p>In accordance with the South African Consumer Protection Act (CPA), customers have a 7-day "cooling-off" period for products purchased online. Items must be returned in their original, unopened packaging at the customer's expense for a full refund.</p>
-  </section>
-
-  <section>
-    <h2>4. Travel Bookings (e.g., WildPath)</h2>
-    <p>WildPath acts as a discovery platform. Refund and cancellation terms for specific tours are governed by the individual Tour Operator's policy as displayed at the time of booking.</p>
-  </section>
-
-  <section>
-    <h2>5. How to Initiate a Refund</h2>
-    <p>Please contact our financial department with your order or subscription details:</p>
+    <h2>1. Platform Role</h2>
     <p>
-      <strong>Email:</strong> wally@vgcorp.co.za<br>
-      <strong>Processing Time:</strong> Approved refunds are typically processed within 7-10 business days.
+      VG Corp (Pty) Ltd acts as the central payment processor for services offered through its platforms.
+      Payments are securely processed and distributed to service providers in accordance with platform agreements.
+    </p>
+
+    <div class="note">
+      VG Corp facilitates transactions but does not always act as the direct service provider.
+      Refund eligibility depends on the specific platform and service provider involved.
+    </div>
+  </section>
+
+  <!-- AQUAVRA -->
+  <section>
+    <h2>2. Digital Products (Aquavra)</h2>
+    <p>
+      All Aquavra products are digital and delivered instantly upon purchase.
+    </p>
+    <ul>
+      <li>No refunds or returns are permitted once access has been granted.</li>
+      <li>By completing a purchase, the user acknowledges and agrees to this no-refund policy.</li>
+    </ul>
+  </section>
+
+  <!-- PRICESMART -->
+  <section>
+    <h2>3. Subscriptions (PriceSmart)</h2>
+    <ul>
+      <li>Subscriptions may be cancelled at any time.</li>
+      <li>Access remains active until the end of the billing cycle.</li>
+      <li>No pro-rata refunds are issued for partially used billing periods.</li>
+    </ul>
+  </section>
+
+  <!-- WILDPATH -->
+  <section>
+    <h2>4. Travel Bookings (WildPath)</h2>
+    <p>
+      WildPath is a marketplace connecting travellers with independent operators.
+      Refunds and cancellations are governed by the WildPath Terms & Conditions, which must be accepted at booking.
+    </p>
+
+    <h3>Cancellation & Refund Model (50/40/10)</h3>
+    <ul>
+      <li><strong>More than 48 hours:</strong> 100% refund (excluding processing fees)</li>
+      <li><strong>24–48 hours:</strong> 50% refund to traveller, 40% to operator, 10% platform fee retained</li>
+      <li><strong>Less than 24 hours / No show:</strong> No refund</li>
+      <li><strong>Operator cancellation:</strong> 100% refund</li>
+    </ul>
+
+    <div class="note">
+      The Operator is responsible for service delivery. Refunds are subject to operator terms and platform policy.
+    </div>
+  </section>
+
+  <!-- ADMIN CONTROL -->
+  <section>
+    <h2>5. Refund Approval</h2>
+    <p>
+      All refund requests are reviewed and approved by VG Corp (Pty) Ltd administration in accordance with platform policies and applicable terms.
     </p>
   </section>
+
+  <!-- PROCESSING -->
+  <section>
+    <h2>6. Processing Time</h2>
+    <ul>
+      <li>Approved refunds are processed within 7–10 business days.</li>
+      <li>Refunds are issued to the original payment method.</li>
+      <li>Transaction or processing fees may be non-refundable.</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>7. Contact</h2>
+    <p>
+      For refund requests or queries:
+    </p>
+    <p>
+      <strong>Email:</strong> wally@vgcorp.co.za<br>
+      <strong>Company:</strong> VG Corp (Pty) Ltd
+    </p>
+  </section>
+
 </div>
 
 <footer>
-  <p>© 2026 VG Corp (Pty) Ltd | Registration No: 2025/519458/07 | Cape Town, South Africa</p>
+  <p>© 2026 VG Corp (Pty) Ltd | Registration No: 2025/519458/07</p>
+  <p>Cape Town, South Africa</p>
 </footer>
 
 </body>
