@@ -52,6 +52,8 @@ WildPath connects travellers with verified operators across South Africa through
 
 ## 🔐 Compliance & Payments
 
+VG Corp (Pty) Ltd acts as the central payment processor for services offered through its platforms. Payments are securely processed and distributed to service providers in accordance with platform agreements.
+
 - POPIA Compliant (South Africa)
 - Consumer Protection Act (CPA)
 - PCI-DSS Payment Processing
