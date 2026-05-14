@@ -37,7 +37,8 @@ Aquavra focuses on performance, mobility, and lifestyle alignment through digita
 **Travel Discovery Platform (South Africa)**  
 WildPath connects travellers with verified operators across South Africa through a structured and secure booking system.
 
-🔗 https://vgcorp.co.za/wildpath/
+🌍 **Platform Website:** https://wildpath.vgcorp.co.za  
+🔗 **Corporate Overview:** https://vgcorp.co.za/wildpath/
 
 ---
 
