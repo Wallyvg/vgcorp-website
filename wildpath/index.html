@@ -217,8 +217,8 @@
     <p>Select your deployment runtime variant below to initialize connection authorization to the active production environments:</p>
     
     <div class="gateway-actions">
-      <a id="webapp-gateway" href="#" target="_blank" rel="noopener noreferrer" class="portal-btn btn-web"> Launch Web Application Platform ↗ </a>
-      <a id="playstore-gateway" href="#" target="_blank" rel="noopener noreferrer" class="portal-btn btn-android"> Download Android App (Google Play) ↗ </a>
+      <a id="webapp-gateway" href="https://wildpath-273ae.web.app" target="_blank" rel="noopener noreferrer" class="portal-btn btn-web"> Launch Web Application Platform ↗ </a>
+      <a id="playstore-gateway" href="https://play.google.com/store/apps/details?id=com.vgcorp.wildpath" target="_blank" rel="noopener noreferrer" class="portal-btn btn-android"> Download Android App (Google Play) ↗ </a>
     </div>
   </div>
 
@@ -357,17 +357,16 @@
       if (docSnap.exists()) {
         const data = docSnap.data();
         
-        if (data.play_store) {
+        // Dynamically override link targets if fields exist in Firestore config
+        if (data.play_store && data.play_store.trim() !== "") {
           document.getElementById("playstore-gateway").href = data.play_store;
         }
-        if (data.web_app) {
+        if (data.web_app && data.web_app.trim() !== "") {
           document.getElementById("webapp-gateway").href = data.web_app;
         }
-      } else {
-        console.log("No layout links config found in Firestore document collection.");
       }
     } catch (error) {
-      console.error("Error establishing connection handshake to Firestore stream:", error);
+      console.error("Error connecting to Firestore database streams:", error);
     }
   }
 
