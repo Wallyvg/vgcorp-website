@@ -151,7 +151,7 @@
 
 <main>
 
-  <h1><a href="https://wildpath.vgcorp.co.za" target="_blank" rel="noopener noreferrer">WildPath Travel Platform ↗</a></h1>
+  <h1><a id="header-link" href="#" target="_blank" rel="noopener noreferrer">WildPath Travel Platform ↗</a></h1>
 
   <p>
     WildPath is a South African travel discovery and booking platform that connects 
@@ -258,8 +258,8 @@
     </p>
   </div>
 
-  <a href="https://play.google.com/store/apps/details?id=com.vgcorp.wildpath" target="_blank" rel="noopener noreferrer" class="cta playstore-cta">Download Android App ↗</a>
-  <a href="https://wildpath.vgcorp.co.za" target="_blank" rel="noopener noreferrer" class="cta platform-cta">Go to WildPath Web ↗</a>
+  <a id="playstore-btn" href="#" target="_blank" rel="noopener noreferrer" class="cta playstore-cta">Download Android App ↗</a>
+  <a id="webapp-btn" href="#" target="_blank" rel="noopener noreferrer" class="cta platform-cta">Go to WildPath Web ↗</a>
   <a href="../index.html" class="cta">← Back to VG Corp</a>
 
 </main>
@@ -268,6 +268,53 @@
   <p>© 2026 VG Corp (Pty) Ltd | WildPath Platform</p>
   <p>South Africa | Merchant Domicile: Cape Town</p>
 </footer>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+  // Your project credentials config mapping
+  const firebaseConfig = {
+    apiKey: "AIzaSyCzKiDmLbyYyFevW_PnInE5Hvi5KsYSSLo",
+    authDomain: "wildpath-273ae.firebaseapp.com",
+    projectId: "wildpath-273ae",
+    storageBucket: "wildpath-273ae.firebasestorage.app",
+    messagingSenderId: "824603973597",
+    appId: "1:824603973597:web:ed66fd2942fe7857c10834"
+  };
+
+  // Initialize Firebase & Firestore
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Fetch destination tracking links from your database documents
+  async function fetchDynamicLinks() {
+    try {
+      const docRef = doc(db, "system_config", "links");
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()) {
+        const data = docSnap.data();
+        
+        // Push target strings directly to DOM hooks
+        if (data.play_store) {
+          document.getElementById("playstore-btn").href = data.play_store;
+        }
+        if (data.web_app) {
+          document.getElementById("webapp-btn").href = data.web_app;
+          document.getElementById("header-link").href = data.web_app;
+        }
+      } else {
+        console.log("No layout links config found in Firestore document collection.");
+      }
+    } catch (error) {
+      console.error("Error establishing connection handshake to Firestore stream:", error);
+    }
+  }
+
+  // Bind execution to document initialization
+  window.addEventListener('DOMContentLoaded', fetchDynamicLinks);
+</script>
 
 </body>
 </html>
