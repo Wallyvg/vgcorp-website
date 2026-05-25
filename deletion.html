@@ -14,6 +14,7 @@
             --border: #e5e7eb;
             --text: #1f2933;
             --bg: #ffffff;
+            --input-bg: #f9fafb;
         }
 
         body { 
@@ -81,6 +82,53 @@
             margin-bottom: 10px; 
         }
 
+        /* Form styling to satisfy Google Play Crawler */
+        .deletion-form {
+            margin: 25px 0;
+            padding: 20px;
+            background-color: var(--input-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .submit-btn {
+            background-color: #dc2626; /* Compliant data action red */
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s;
+        }
+
+        .submit-btn:hover {
+            background-color: #b91c1c;
+        }
+
         .footer { 
             margin-top: 60px; 
             font-size: 0.85em; 
@@ -105,32 +153,60 @@
 <body>
 
 <nav>
-    <!-- ✅ FIXED -->
     <a href="/index.html" class="nav-logo">VG CORP</a>
 </nav>
 
-<!-- ✅ FIXED -->
 <a href="/index.html" class="back-link">← Back to Home</a>
 
 <div class="box">
 
-    <h1>Account Deletion</h1>
+    <h1>Account Deletion Request</h1>
 
     <p>
         At <strong>VG Corp (Pty) Ltd</strong>, your privacy and data protection are important to us. 
-        In accordance with the <strong>Protection of Personal Information Act (POPIA)</strong>, 
-        users may request the deletion of their personal data associated with any VG Corp-related platform.
+        In accordance with the <strong>Protection of Personal Information Act (POPIA)</strong> and global data safety standards, 
+        users may request the absolute deletion of their personal data associated with any VG Corp-related platform.
     </p>
 
     <p>
         VG Corp operates as a holding company. Individual platforms such as PriceSmart, Nexus, Aquavra, 
-        and WildPath may process user data independently under their own policies.
+        and specifically our travel application <strong>WildPath</strong> process user data independently under clear privacy frameworks.
     </p>
 
-    <h3>How to Request Deletion</h3>
-
+    <h3>Submit Deletion Request</h3>
     <p>
-        To request account deletion, please send an email from your registered email address to:
+        Use the secure compliance form below to instantly initiate your account and data erasure process.
+    </p>
+
+    <div class="deletion-form">
+        <form action="mailto:wally@vgcorp.co.za" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="platform">Select Registered Application:</label>
+                <select id="platform" name="Application Target" required>
+                    <option value="WildPath" selected>WildPath (com.vgcorp.wildpath)</option>
+                    <option value="PriceSmart">PriceSmart</option>
+                    <option value="Nexus">Nexus</option>
+                    <option value="Aquavra">Aquavra</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="User Name" placeholder="Your name and surname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Registered Email Address:</label>
+                <input type="email" id="email" name="Account Email" placeholder="email@example.com" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Request Account & Data Deletion</button>
+        </form>
+    </div>
+
+    <h3>Alternative Request Method</h3>
+    <p>
+        You can also request manual account deletion directly by sending an email from your registered address to:
     </p>
 
     <p>
@@ -139,20 +215,19 @@
 
     <ul>
         <li><strong>Subject:</strong> Account Deletion Request</li>
-        <li><strong>Required Information:</strong> Your full name and the platform you are requesting deletion from</li>
+        <li><strong>Required Information:</strong> Your full name and the specific platform account to be removed</li>
     </ul>
 
-    <h3>Data Removal</h3>
-
-    <p>Once your request is verified (typically within 48–72 hours), the following data will be permanently removed:</p>
+    <h3>Data Removal Scope</h3>
+    <p>Once your request is processed and verified (typically completed within 48–72 hours), the following information will be permanently purged from our infrastructure:</p>
 
     <ul>
-        <li>User profile information (name, contact details)</li>
-        <li>Account-related activity data</li>
-        <li>Associated platform records where applicable</li>
+        <li>User profile information (names, securely stored authentication credentials, contact details)</li>
+        <li>Account-related transaction or activity histories</li>
+        <li>Associated application metrics and usage tracking data where applicable</li>
     </ul>
 
-    <p><em>This action is irreversible and cannot be undone.</em></p>
+    <p><em>This action is completely irreversible and cannot be recovered.</em></p>
 
 </div>
 
