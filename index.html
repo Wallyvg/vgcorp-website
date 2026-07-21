@@ -8,26 +8,55 @@
   <meta name="description" content="VG Corp (Pty) Ltd is a South African holding company managing independent digital platforms including PriceSmart, Aquavra, and WildPath.">
   <link rel="canonical" href="https://www.vgcorp.co.za/">
 
+  <!-- 1. FAVICON (Browser Tab Logo) -->
+  <link rel="icon" type="image/png" href="assets/logos/VG Corp Logo.png">
+  <link rel="apple-touch-icon" href="assets/logos/VG Corp Logo.png">
+
+  <!-- 2. OPEN GRAPH & SOCIAL MEDIA LOGO PREVIEWS -->
+  <meta property="og:title" content="VG Corp (Pty) Ltd | Digital Ecosystem South Africa">
+  <meta property="og:description" content="South African holding company managing independent digital platforms including PriceSmart, Aquavra, and WildPath.">
+  <meta property="og:image" content="assets/logos/VG Corp Logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.vgcorp.co.za/">
+
   <style>
     :root {
       --primary: #17183a;
       --accent: #24c9bd;
-      --glass: rgba(255,255,255,0.85);
-      --border: rgba(229,231,235,0.5);
+      --glass: rgba(255, 255, 255, 0.88);
+      --glass-dark: rgba(23, 24, 58, 0.95);
+      --border: rgba(229, 231, 235, 0.6);
       --text: #1f2933;
       --muted: #4b5563;
+      --shadow: 0 10px 30px -5px rgba(23, 24, 58, 0.08);
+      --glow: 0 0 25px rgba(36, 201, 189, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg,#f0f4f8,#e2e8f0);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
       background: var(--glass);
-      padding: 18px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 14px 20px;
       border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
     }
 
     .nav {
@@ -35,59 +64,160 @@
       margin: auto;
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
-    .nav a {
+    /* Brand Logo in Navbar */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
       text-decoration: none;
       color: var(--primary);
-      margin-left: 15px;
+      transition: transform 0.2s ease;
+    }
+
+    .brand:hover {
+      transform: translateY(-1px);
+    }
+
+    .brand-logo {
+      height: 42px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-weight: 800;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      line-height: 1.1;
+      color: var(--primary);
+    }
+
+    .brand-subtitle {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--primary);
       font-weight: 600;
       font-size: 14px;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
     }
 
     .hero {
       text-align: center;
-      padding: 110px 20px 70px;
+      padding: 80px 20px 60px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* Hero Central Brand Logo Badge */
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 24px;
+      background: var(--primary);
+      border-radius: 24px;
+      box-shadow: var(--shadow), var(--glow);
+      margin-bottom: 28px;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-badge:hover {
+      transform: scale(1.03);
+    }
+
+    .hero-badge img {
+      max-height: 90px;
+      width: auto;
+      object-fit: contain;
     }
 
     .hero h1 {
-      font-size: 44px;
+      font-size: 42px;
       color: var(--primary);
+      margin: 0 0 16px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
     }
 
     .hero p {
       color: var(--muted);
-      max-width: 700px;
-      margin: auto;
+      font-size: 16px;
+      max-width: 760px;
+      margin: 0 auto 16px;
     }
 
     .highlight {
-      margin-top: 20px;
+      margin-top: 24px;
       font-size: 14px;
       color: #374151;
-      max-width: 750px;
+      max-width: 780px;
       margin-left: auto;
       margin-right: auto;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 16px 20px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
     }
 
     .container {
       max-width: 1200px;
       margin: auto;
       padding: 0 20px 80px;
+      width: 100%;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 30px;
     }
 
     .card {
       background: var(--glass);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       border-radius: 20px;
-      padding: 35px;
+      padding: 35px 25px;
       text-align: center;
       border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px -5px rgba(23, 24, 58, 0.12);
     }
 
     .logo-box {
@@ -104,25 +234,88 @@
       object-fit: contain;
     }
 
-    h3 { color: var(--primary); }
-    p { color: var(--muted); font-size: 14px; }
+    h3 {
+      color: var(--primary);
+      margin: 10px 0 8px;
+      font-size: 20px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 20px;
+    }
 
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 18px;
+      padding: 12px 20px;
       border-radius: 10px;
-      background: #f1f5f9;
-      color: var(--primary);
+      background: var(--primary);
+      color: #ffffff;
       text-decoration: none;
       font-weight: bold;
+      font-size: 13px;
+      transition: background 0.2s ease, transform 0.2s ease;
+      border: none;
+      align-self: center;
+    }
+
+    .btn:hover {
+      background: #24305e;
+      transform: translateY(-1px);
+    }
+
+    .btn-disabled {
+      background: #e2e8f0;
+      color: #94a3b8;
+      cursor: default;
     }
 
     footer {
+      background: var(--glass-dark);
+      color: #94a3b8;
       text-align: center;
       padding: 50px 20px;
       font-size: 13px;
-      color: #6b7280;
+      margin-top: auto;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-logo-container {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-logo {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    footer p {
+      color: #94a3b8;
+      margin: 6px 0;
+      font-size: 13px;
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .nav-links {
+        gap: 12px;
+        font-size: 13px;
+      }
+      .hero h1 {
+        font-size: 32px;
+      }
+      .hero-badge img {
+        max-height: 70px;
+      }
     }
   </style>
 </head>
@@ -131,8 +324,20 @@
 
 <header>
   <div class="nav">
-    <strong>VG CORP</strong>
-    <div>
+    <a href="index.html" class="brand" title="VG Corp (Pty) Ltd Home">
+      <!-- Location 1: Navigation Header Logo -->
+      <img 
+        src="assets/logos/VG Corp Logo.png" 
+        alt="VG Corp Logo" 
+        class="brand-logo"
+        onerror="this.onerror=null; this.src='https://placehold.co/100x100/17183a/24c9bd?text=VG+CORP';"
+      />
+      <div class="brand-text">
+        <span class="brand-title">VG CORP</span>
+        <span class="brand-subtitle">(PTY) LTD</span>
+      </div>
+    </a>
+    <div class="nav-links">
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
       <a href="refunds.html">Refunds</a>
@@ -143,13 +348,22 @@
 </header>
 
 <section class="hero">
+  <!-- Location 2: Main Hero Showcase Badge -->
+  <div class="hero-badge">
+    <img 
+      src="assets/logos/VG Corp Logo.png" 
+      alt="VG Corp (Pty) Ltd Showcase Logo"
+      onerror="this.onerror=null; this.src='https://placehold.co/200x200/17183a/24c9bd?text=VG+CORP';"
+    />
+  </div>
+
   <h1>Digital Ecosystem</h1>
   <p>
     VG Corp (Pty) Ltd is a South African holding company that owns and manages a portfolio of independent digital brands focused on simplifying everyday life. Each brand operates independently with its own platform, systems, and legal framework, supported by a centralized strategic and operational structure.
   </p>
 
   <p class="highlight">
-    VG Corp (Pty) Ltd acts as the central payment processor for services offered through its platforms. Payments are securely processed and distributed to service providers in accordance with platform agreements.
+    <strong>Merchant Notice:</strong> VG Corp (Pty) Ltd acts as the central payment processor for services offered through its platforms. Payments are securely processed and distributed to service providers in accordance with platform agreements.
   </p>
 </section>
 
@@ -158,41 +372,49 @@
 
     <!-- NEXUS -->
     <div class="card">
-      <div class="logo-box">
-        <img src="assets/logos/Nexus.png" alt="Nexus Logo">
+      <div>
+        <div class="logo-box">
+          <img src="assets/logos/Nexus.png" alt="Nexus Logo" onerror="this.onerror=null; this.src='https://placehold.co/180x70/f1f5f9/17183a?text=Nexus';">
+        </div>
+        <h3>Nexus</h3>
+        <p>Central automation and intelligence layer powering the ecosystem.</p>
       </div>
-      <h3>Nexus</h3>
-      <p>Central automation and intelligence layer powering the ecosystem.</p>
-      <span class="btn">Launching Soon</span>
+      <span class="btn btn-disabled">Launching Soon</span>
     </div>
 
     <!-- PRICESMART -->
     <div class="card">
-      <div class="logo-box">
-        <img src="assets/logos/PriceSmart Logo.png" alt="PriceSmart Logo">
+      <div>
+        <div class="logo-box">
+          <img src="assets/logos/PriceSmart Logo.png" alt="PriceSmart Logo" onerror="this.onerror=null; this.src='https://placehold.co/180x70/f1f5f9/17183a?text=PriceSmart';">
+        </div>
+        <h3>PriceSmart</h3>
+        <p>Retail intelligence platform for data-driven purchasing decisions.</p>
       </div>
-      <h3>PriceSmart</h3>
-      <p>Retail intelligence platform for data-driven purchasing decisions.</p>
       <a href="pricesmart/" class="btn">View Project</a>
     </div>
 
     <!-- AQUAVRA -->
     <div class="card">
-      <div class="logo-box">
-        <img src="assets/logos/Aquavra.png" alt="Aquavra Logo">
+      <div>
+        <div class="logo-box">
+          <img src="assets/logos/Aquavra.png" alt="Aquavra Logo" onerror="this.onerror=null; this.src='https://placehold.co/180x70/f1f5f9/17183a?text=Aquavra';">
+        </div>
+        <h3>Aquavra</h3>
+        <p>Wellness and lifestyle ecosystem focused on performance and alignment.</p>
       </div>
-      <h3>Aquavra</h3>
-      <p>Wellness and lifestyle ecosystem focused on performance and alignment.</p>
-      <a href="https://www.aquavra.com" class="btn">Visit</a>
+      <a href="https://www.aquavra.com" target="_blank" rel="noopener" class="btn">Visit Website</a>
     </div>
 
     <!-- WILDPATH -->
     <div class="card">
-      <div class="logo-box">
-        <img src="assets/logos/WILDPATH.png" alt="Wildpath Logo">
+      <div>
+        <div class="logo-box">
+          <img src="assets/logos/WILDPATH.png" alt="Wildpath Logo" onerror="this.onerror=null; this.src='https://placehold.co/180x70/f1f5f9/17183a?text=WildPath';">
+        </div>
+        <h3>WildPath</h3>
+        <p>Travel discovery platform connecting travellers with verified operators.</p>
       </div>
-      <h3>WildPath</h3>
-      <p>Travel discovery platform connecting travellers with verified operators.</p>
       <a href="wildpath/" class="btn">View Project</a>
     </div>
 
@@ -200,6 +422,16 @@
 </div>
 
 <footer>
+  <!-- Location 3: Footer Corporate Logo -->
+  <div class="footer-logo-container">
+    <img 
+      src="assets/logos/VG Corp Logo.png" 
+      alt="VG Corp Footer Logo" 
+      class="footer-logo"
+      onerror="this.onerror=null; this.src='https://placehold.co/120x60/17183a/24c9bd?text=VG+CORP';"
+    />
+  </div>
+
   <p>© 2026 VG Corp (Pty) Ltd | Reg: 2025/519458/07</p>
   <p>South Africa | Merchant Domicile: Cape Town</p>
   <p>All payments processed securely via trusted PCI-DSS compliant payment gateways.</p>
