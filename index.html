@@ -9,13 +9,13 @@
   <link rel="canonical" href="https://www.vgcorp.co.za/">
 
   <!-- 1. FAVICON (Browser Tab Logo) -->
-  <link rel="icon" type="image/png" href="assets/logos/VG Corp Logo.png">
-  <link rel="apple-touch-icon" href="assets/logos/VG Corp Logo.png">
+  <link rel="icon" type="image/png" href="assets/logos/vg-corp-logo.png">
+  <link rel="apple-touch-icon" href="assets/logos/vg-corp-logo.png">
 
   <!-- 2. OPEN GRAPH & SOCIAL MEDIA LOGO PREVIEWS -->
   <meta property="og:title" content="VG Corp (Pty) Ltd | Digital Ecosystem South Africa">
   <meta property="og:description" content="South African holding company managing independent digital platforms including PriceSmart, Aquavra, and WildPath.">
-  <meta property="og:image" content="assets/logos/VG Corp Logo.png">
+  <meta property="og:image" content="assets/logos/vg-corp-logo.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.vgcorp.co.za/">
 
@@ -83,9 +83,10 @@
 
     .brand-logo {
       height: 42px;
-      width: auto;
-      object-fit: contain;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+      width: 42px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
 
     .brand-text {
@@ -130,33 +131,31 @@
 
     .hero {
       text-align: center;
-      padding: 80px 20px 60px;
+      padding: 60px 20px 50px;
       max-width: 900px;
       margin: auto;
     }
 
-    /* Hero Central Brand Logo Badge */
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 18px 24px;
-      background: var(--primary);
+    /* Hero Showcase Logo Wrapper */
+    .hero-badge-wrapper {
+      display: inline-block;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .hero-badge-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
       border-radius: 24px;
-      box-shadow: var(--shadow), var(--glow);
-      margin-bottom: 28px;
-      border: 1px solid rgba(255,255,255,0.1);
-      transition: transform 0.3s ease;
+      box-shadow: 0 15px 35px rgba(23, 24, 58, 0.25), var(--glow);
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .hero-badge:hover {
-      transform: scale(1.03);
-    }
-
-    .hero-badge img {
-      max-height: 90px;
-      width: auto;
-      object-fit: contain;
+    .hero-badge-img:hover {
+      transform: scale(1.04);
+      box-shadow: 0 20px 40px rgba(23, 24, 58, 0.3), 0 0 30px rgba(36, 201, 189, 0.4);
     }
 
     .hero h1 {
@@ -286,13 +285,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 10px;
     }
 
     .footer-logo {
-      height: 48px;
-      width: auto;
-      object-fit: contain;
+      height: 54px;
+      width: 54px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     footer p {
@@ -313,8 +313,9 @@
       .hero h1 {
         font-size: 32px;
       }
-      .hero-badge img {
-        max-height: 70px;
+      .hero-badge-img {
+        width: 120px;
+        height: 120px;
       }
     }
   </style>
@@ -325,12 +326,12 @@
 <header>
   <div class="nav">
     <a href="index.html" class="brand" title="VG Corp (Pty) Ltd Home">
-      <!-- Location 1: Navigation Header Logo -->
+      <!-- Header Logo with Web-Safe Path and Fallbacks -->
       <img 
-        src="assets/logos/VG Corp Logo.png" 
+        src="assets/logos/vg-corp-logo.png" 
         alt="VG Corp Logo" 
         class="brand-logo"
-        onerror="this.onerror=null; this.src='https://placehold.co/100x100/17183a/24c9bd?text=VG+CORP';"
+        onerror="this.onerror=null; this.src='assets/logos/VG%20Corp%20Logo.png';"
       />
       <div class="brand-text">
         <span class="brand-title">VG CORP</span>
@@ -348,12 +349,13 @@
 </header>
 
 <section class="hero">
-  <!-- Location 2: Main Hero Showcase Badge -->
-  <div class="hero-badge">
+  <!-- Central Hero Showcase Badge -->
+  <div class="hero-badge-wrapper">
     <img 
-      src="assets/logos/VG Corp Logo.png" 
+      src="assets/logos/vg-corp-logo.png" 
       alt="VG Corp (Pty) Ltd Showcase Logo"
-      onerror="this.onerror=null; this.src='https://placehold.co/200x200/17183a/24c9bd?text=VG+CORP';"
+      class="hero-badge-img"
+      onerror="this.onerror=null; this.src='assets/logos/VG%20Corp%20Logo.png';"
     />
   </div>
 
@@ -422,13 +424,12 @@
 </div>
 
 <footer>
-  <!-- Location 3: Footer Corporate Logo -->
   <div class="footer-logo-container">
     <img 
-      src="assets/logos/VG Corp Logo.png" 
+      src="assets/logos/vg-corp-logo.png" 
       alt="VG Corp Footer Logo" 
       class="footer-logo"
-      onerror="this.onerror=null; this.src='https://placehold.co/120x60/17183a/24c9bd?text=VG+CORP';"
+      onerror="this.onerror=null; this.src='assets/logos/VG%20Corp%20Logo.png';"
     />
   </div>
 
