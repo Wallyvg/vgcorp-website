@@ -65,6 +65,26 @@ nav a{
     line-height:1.7;
 }
 
+.hero-buttons{
+    margin-top:25px;
+}
+
+.cta{
+    display:inline-block;
+    margin:10px 5px 0;
+    padding:12px 20px;
+    background:var(--secondary);
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.cta-download{
+    background:var(--highlight);
+    color:var(--primary);
+}
+
 .box{
     background:white;
     border:1px solid var(--border);
@@ -79,17 +99,6 @@ h2{
 
 ul{
     line-height:1.8;
-}
-
-.cta{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 20px;
-    background:var(--secondary);
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
 }
 
 .footer{
@@ -115,15 +124,29 @@ ul{
 
     <div class="hero">
         <h1>PriceSmart</h1>
+
         <p>
             Retail Intelligence Platform for South Africa.
             Compare prices, discover specials, manage grocery spending,
             and make smarter purchasing decisions using real-time retail insights.
         </p>
+
+        <div class="hero-buttons">
+
+            <a href="download/" class="cta cta-download">
+                Download PriceSmart App
+            </a>
+
+            <a href="../index.html" class="cta">
+                ← Back to VG Corp
+            </a>
+
+        </div>
     </div>
 
     <div class="box">
         <h2>Core Features</h2>
+
         <ul>
             <li>Real-time retail price tracking</li>
             <li>Barcode scanning and product search</li>
@@ -137,7 +160,9 @@ ul{
     <div class="box">
         <h2>Subscription Pricing</h2>
 
-        <p>PriceSmart offers a 7-day free trial for new users.</p>
+        <p>
+            PriceSmart offers a 7-day free trial for new users.
+        </p>
 
         <ul>
             <li>Monthly Subscription: R20/month</li>
@@ -204,7 +229,11 @@ ul{
         </p>
 
         <p>
-            <strong>wally@vgcorp.co.za</strong>
+            <strong>
+                <a href="mailto:wally@vgcorp.co.za">
+                    wally@vgcorp.co.za
+                </a>
+            </strong>
         </p>
 
         <p>
@@ -239,11 +268,12 @@ ul{
         </p>
 
         <p>
-            Contact: wally@vgcorp.co.za
+            Contact:
+            <a href="mailto:wally@vgcorp.co.za">
+                wally@vgcorp.co.za
+            </a>
         </p>
     </div>
-
-    <a href="../index.html" class="cta">← Back to VG Corp</a>
 
 </div>
 
@@ -251,5 +281,7 @@ ul{
     © 2026 VG Corp (Pty) Ltd | PriceSmart | South Africa
 </div>
 
+</body>
+</html>
 </body>
 </html>
