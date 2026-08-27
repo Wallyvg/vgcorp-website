@@ -22,6 +22,10 @@
     --background:#f8fafc;
 }
 
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
@@ -40,6 +44,10 @@ nav a{
     margin-right:20px;
     font-size:14px;
     font-weight:600;
+}
+
+nav a:hover{
+    color:var(--highlight);
 }
 
 .container{
@@ -66,23 +74,52 @@ nav a{
 }
 
 .hero-buttons{
-    margin-top:25px;
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
 }
 
 .cta{
-    display:inline-block;
-    margin:10px 5px 0;
-    padding:12px 20px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin:0;
+    padding:14px 22px;
     background:var(--secondary);
     color:white;
     text-decoration:none;
-    border-radius:8px;
+    border-radius:10px;
     font-weight:bold;
+    font-size:15px;
+    transition:all 0.2s ease;
+    box-shadow:0 5px 15px rgba(23,24,58,0.12);
+}
+
+.cta:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(23,24,58,0.18);
 }
 
 .cta-download{
     background:var(--highlight);
     color:var(--primary);
+    box-shadow:0 6px 18px rgba(36,201,189,0.25);
+}
+
+.cta-download:hover{
+    background:#1fb8ad;
+    color:var(--primary);
+}
+
+.play-icon{
+    width:21px;
+    height:21px;
+    fill:currentColor;
+    flex-shrink:0;
 }
 
 .box{
@@ -108,6 +145,50 @@ ul{
     color:#6b7280;
     font-size:13px;
 }
+
+.footer a{
+    color:var(--secondary);
+    text-decoration:none;
+}
+
+.footer a:hover{
+    text-decoration:underline;
+}
+
+@media (max-width:600px){
+
+    nav{
+        text-align:center;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:5px 8px;
+    }
+
+    .container{
+        margin:30px auto;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .cta{
+        width:100%;
+        max-width:320px;
+    }
+
+}
 </style>
 </head>
 
@@ -123,6 +204,7 @@ ul{
 <div class="container">
 
     <div class="hero">
+
         <h1>PriceSmart</h1>
 
         <p>
@@ -133,18 +215,40 @@ ul{
 
         <div class="hero-buttons">
 
-            <a href="download/" class="cta cta-download">
-                Download PriceSmart App
+            <!-- DIRECT GOOGLE PLAY DOWNLOAD -->
+            <a
+                href="https://play.google.com/store/apps/details?id=com.VGCORP.PriceSmart"
+                class="cta cta-download"
+                target="_blank"
+                rel="noopener"
+                aria-label="Get PriceSmart on Google Play"
+            >
+
+                <!-- Google Play Icon -->
+                <svg
+                    class="play-icon"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                >
+                    <path d="M3.5 2.5L14.2 12 3.5 21.5C3.2 21.1 3 20.5 3 20V4C3 3.5 3.2 2.9 3.5 2.5ZM15.3 13L18.5 16.1L5.4 23.2L15.3 13ZM19.6 10.1L22 11.4C22.6 11.7 22.6 12.5 22 12.8L19.6 14.1L16.1 12L19.6 10.1ZM5.4 0.8L18.5 7.9L15.3 11L5.4 0.8Z"/>
+                </svg>
+
+                Get PriceSmart on Google Play
+
             </a>
 
+            <!-- BACK TO VG CORP -->
             <a href="../index.html" class="cta">
                 ← Back to VG Corp
             </a>
 
         </div>
+
     </div>
 
     <div class="box">
+
         <h2>Core Features</h2>
 
         <ul>
@@ -155,9 +259,11 @@ ul{
             <li>Budget and savings tools</li>
             <li>Retail promotion monitoring</li>
         </ul>
+
     </div>
 
     <div class="box">
+
         <h2>Subscription Pricing</h2>
 
         <p>
@@ -175,9 +281,11 @@ ul{
             Subscription payments are non-refundable and remain active
             until the end of the current billing period.
         </p>
+
     </div>
 
     <div class="box">
+
         <h2>Retail Data Disclaimer</h2>
 
         <p>
@@ -197,9 +305,11 @@ ul{
             province, city, suburb and individual store location.
             Actual in-store pricing always takes precedence.
         </p>
+
     </div>
 
     <div class="box">
+
         <h2>Privacy & POPIA Compliance</h2>
 
         <p>
@@ -217,9 +327,11 @@ ul{
         <p>
             Personal information is never sold to third-party marketers.
         </p>
+
     </div>
 
     <div class="box">
+
         <h2>Account Deletion</h2>
 
         <p>
@@ -240,9 +352,11 @@ ul{
             Verified deletion requests are typically processed
             within 7 business days.
         </p>
+
     </div>
 
     <div class="box">
+
         <h2>Technology & Infrastructure</h2>
 
         <ul>
@@ -252,9 +366,11 @@ ul{
             <li>Google Play Billing Integration</li>
             <li>PCI-DSS Compliant Payment Processing</li>
         </ul>
+
     </div>
 
     <div class="box">
+
         <h2>Company Information</h2>
 
         <p>
@@ -273,15 +389,16 @@ ul{
                 wally@vgcorp.co.za
             </a>
         </p>
+
     </div>
 
 </div>
 
 <div class="footer">
+
     © 2026 VG Corp (Pty) Ltd | PriceSmart | South Africa
+
 </div>
 
-</body>
-</html>
 </body>
 </html>
